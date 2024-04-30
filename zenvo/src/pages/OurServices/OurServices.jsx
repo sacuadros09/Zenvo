@@ -1,11 +1,11 @@
 import "./OurServices.css"
-import { InfoText, Button, OurServices} from "../../components"
+import { InfoText, Button, CardOurServices} from "../../components"
 import { dataServices } from "../../services/dataServices"
 
 
 
 
-export function ServiceOur () {
+export function OurServices () {
 return(
     <div className="big-container">
 
@@ -22,9 +22,9 @@ return(
     return(
     <div key={id} className="data-container">
 
-    <OurServices img={img} ></OurServices>  
-    <OurServices title={title}></OurServices>
-    <OurServices description={description}></OurServices>
+    <CardOurServices img={img} ></CardOurServices>  
+    <CardOurServices title={title}></CardOurServices>
+    <CardOurServices description={description}></CardOurServices>
     <Button></Button>
 
     

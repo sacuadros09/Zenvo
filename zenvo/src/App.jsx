@@ -1,10 +1,12 @@
 import './App.css'
-import { SocialMediaButton } from './components/index'
-
+import { AppRouter } from "./router/AppRouter"
+import { Header } from './components'
+  
 function App() {
   return (
     <>
-      <SocialMediaButton/>
+    <Header/>
+    <AppRouter/>
     </>
   )
 }

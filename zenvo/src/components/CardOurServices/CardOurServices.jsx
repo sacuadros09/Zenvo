@@ -1,6 +1,6 @@
-import './OurServices.css'
+import './CardOurServices.css'
 import {Button } from '../index'
-export function OurServices (props) {
+export function CardOurServices (props) {
     const { title, description, img, url } = props
     return (
       <div>

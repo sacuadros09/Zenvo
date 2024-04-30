@@ -1,5 +1,5 @@
-import "./About Us.css"
-import { InfoText, CardWeAre,InfoCard,OurServices,CardBenefits} from "../../components"
+import "./AboutUs.css"
+import { InfoText, CardWeAre,InfoCard,CardOurServices,CardBenefits} from "../../components"
 import { dataAbout } from "../../services/dataAbout"
 
 
@@ -36,10 +36,10 @@ return(
 
     <div className="mission-vision">
         <div className="mission">
-    <OurServices title="Mission" description="Our mission at Zenvo Studio is to exceed client expectations by transforming ideas into captivating visual experiences. With expertise in UX/UI and frontend, we merge functionality with creativity, leaving a lasting mark through exceptional design." img="/src/assets/Mission.png"></OurServices>
+    <CardOurServices title="Mission" description="Our mission at Zenvo Studio is to exceed client expectations by transforming ideas into captivating visual experiences. With expertise in UX/UI and frontend, we merge functionality with creativity, leaving a lasting mark through exceptional design." img="/src/assets/Mission.png"></CardOurServices>
     </div>
     <div className="vision">
-    <OurServices title="Vision" description="At Zenvo Studio, our vision is to lead the creation of innovative visual solutions that set trends in the design industry. We aim to build strong relationships with clients, elevating design quality and aesthetics in every challenge. As a benchmark for inspiring visual experiences, we contribute to the success of brands in the digital world." img="/src/assets/Vission.png"></OurServices>
+    <CardOurServices title="Vision" description="At Zenvo Studio, our vision is to lead the creation of innovative visual solutions that set trends in the design industry. We aim to build strong relationships with clients, elevating design quality and aesthetics in every challenge. As a benchmark for inspiring visual experiences, we contribute to the success of brands in the digital world." img="/src/assets/Vission.png"></CardOurServices>
     </div>
     </div>
 

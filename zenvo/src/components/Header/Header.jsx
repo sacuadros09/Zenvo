@@ -1,18 +1,33 @@
-import { Button } from "../Button/Button"
-import { NavBar } from "../NavBar/NavBar"
+import { useState } from "react"
+import { Button, NavBar, MobileNavbar } from "../index"
+import burguerMenu from '../../assets/burguer-menu.svg'
 import "./Header.css"
 
-
 export function Header() {
-   
+   const [showMenu,setShowMenu] = useState()
+
+   const handleClick = () => {
+    setShowMenu(!showMenu)
+   }
+
 return (
-    <div className="container">
-    <img src="/src/assets/Logo.png"></img>
-        <NavBar text= "Home"></NavBar>
-        <NavBar text= "About us"></NavBar>
-        <NavBar text= "Services" url="/serviceour"></NavBar>
-        <NavBar text= "Portfolio"></NavBar>
-        <Button text= "Contact"></Button>
-    </div>
+
+    <nav className="header">
+        <button className='burguer-menu' onClick={handleClick}>
+            <img src={burguerMenu}/>
+        </button>
+        <section>
+            {!showMenu ? null : <MobileNavbar/>}
+        </section>
+        <div className="list-navbar">
+            <img className="logo" src="/src/assets/Logo.png"/>
+            <NavBar text= "Home" url='/'/>
+            <NavBar text= "About Us" url='/AboutUs'/>
+            <NavBar text= "Services" url="/OurServices"/>
+            <NavBar text= "Portfolio"/>
+        </div>
+        <Button text= "Contact"/>
+        
+    </nav>
 )
 }
