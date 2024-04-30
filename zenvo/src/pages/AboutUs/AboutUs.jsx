@@ -16,7 +16,7 @@ return(
     {dataAbout.map(({id,img,name}) => {
     return(
     <div key={id} className="data-container">
-    <CardWeAre fotos={img} ></CardWeAre>  
+    <CardWeAre photo={img} ></CardWeAre>
     <CardWeAre name={name}></CardWeAre>
         
     

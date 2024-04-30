@@ -1,0 +1,13 @@
+.contactus-button{
+    background-color: #FF51F8;
+    color: white;
+    border: 0;
+    box-shadow: -1px -1px 15px #41465b, 1px 1px 15px #41465b;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

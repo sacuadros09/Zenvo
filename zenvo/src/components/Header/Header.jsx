@@ -11,7 +11,6 @@ export function Header() {
    }
 
 return (
-
     <nav className="header">
         <button className='burguer-menu' onClick={handleClick}>
             <img src={burguerMenu}/>
@@ -26,7 +25,7 @@ return (
             <NavBar text= "Services" url="/OurServices"/>
             <NavBar text= "Portfolio"/>
         </div>
-        <Button text= "Contact"/>
+        <Button text= "Contact Us"/>
         
     </nav>
 )
