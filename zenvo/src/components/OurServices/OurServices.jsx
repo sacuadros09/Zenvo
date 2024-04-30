@@ -8,7 +8,7 @@ export function OurServices (props) {
         <img src={img} />
         <h1> {title} </h1>
         <p>{description}</p>
-        <Button></Button>
+        <Button/>
       </div>
     )
   }

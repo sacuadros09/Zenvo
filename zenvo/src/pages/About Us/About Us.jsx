@@ -1,0 +1,64 @@
+import "./About Us.css"
+import { InfoText, CardWeAre,InfoCard,OurServices,CardBenefits} from "../../components"
+import { dataAbout } from "../../services/dataAbout"
+
+
+
+export function AboutUs () {
+return(
+    <div className="big-container">
+
+<div className="who-we-are">
+        <InfoText title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions that make a lasting impact. Specializing in innovative and engaging interfaces, we focus on UX/UI and frontend expertise to merge functionality with design, ensuring every detail contributes to an exceptional user experience.?" img="/src/assets/RobotAbout.png"></InfoText>
+
+        </div>
+        
+    {dataAbout.map(({id,img,name}) => {
+    return(
+    <div key={id} className="data-container">
+    <CardWeAre fotos={img} ></CardWeAre>  
+    <CardWeAre name={name}></CardWeAre>
+        
+    
+
+    </div>
+    )
+    
+    })}
+    <div>
+
+    <div className="our-purpose">
+    <img src="/src/assets/purpose-img.png"></img>
+    <h1>What is our purpose?</h1>
+    <InfoCard title="Transforming the digital experience:" text="Our purpose is to revolutionize the way people interact with technology by offering innovative and creative design solutions"></InfoCard>
+    <InfoCard title="Make a positive impact:" text="We seek to improve the lives of our clients and their audience by creating meaningful and memorable digital experiences."></InfoCard>
+    </div>
+
+    <div className="mission-vision">
+        <div className="mission">
+    <OurServices title="Mission" description="Our mission at Zenvo Studio is to exceed client expectations by transforming ideas into captivating visual experiences. With expertise in UX/UI and frontend, we merge functionality with creativity, leaving a lasting mark through exceptional design." img="/src/assets/Mission.png"></OurServices>
+    </div>
+    <div className="vision">
+    <OurServices title="Vision" description="At Zenvo Studio, our vision is to lead the creation of innovative visual solutions that set trends in the design industry. We aim to build strong relationships with clients, elevating design quality and aesthetics in every challenge. As a benchmark for inspiring visual experiences, we contribute to the success of brands in the digital world." img="/src/assets/Vission.png"></OurServices>
+    </div>
+    </div>
+
+    <div className="benefits">
+        <div className="creative">
+        <CardBenefits img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+        </div>
+        <div className="client">
+        <CardBenefits img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+        </div>
+        <div className="results">
+        <CardBenefits img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+        </div>
+
+
+    </div>
+
+    </div>
+    </div>
+)
+}
+  
