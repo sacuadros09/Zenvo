@@ -1,0 +1,18 @@
+.cardservices-ourservices img {
+    width: 356px; 
+    height: 237px;
+    display: block; 
+    margin: 0 auto;
+}
+
+.cardservices-ourservices h1 {
+    font-size: 18px;
+    color: #98DFFD;
+    margin-left: 14px;
+}
+
+.cardservices-ourservices p {
+    font-size: 15px;
+    color:white;
+    text-align: center;
+}

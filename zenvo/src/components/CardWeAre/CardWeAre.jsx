@@ -1,12 +1,12 @@
 import './CardWeAre.css'
 
 export function CardWeAre (props) {
-    const { fotos, url, name } = props
+    const { photo, url, name } = props
     return (
       <div>
   
-        <img src={fotos}/>
-        <button>{url}{name}</button>
+        <img src={photo}/>
+        <button>{name}</button>
       </div>
     )
   }

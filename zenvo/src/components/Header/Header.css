@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 110px;
+    height: 110px;
+}
+
+.burguer-menu img{
+    width: 20px;
+    height: 15px;
+}
+
+.list-navbar{
+    display: none;
+}
+
+.logo{
+    display: none;
+}
+
+@media (min-width:768px){
+
+    .list-navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo{
+        display: flex;
+    }
+
+    .burguer-menu{
+        display: none;
+    }
+}

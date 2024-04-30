@@ -3,13 +3,15 @@ export * from "./Button2/Button2"
 export * from "./Button3/Button3"
 export * from "./CardBenefits/CardBenefits"
 export * from "./CardWeAre/CardWeAre"
+export * from "./CardProyects/CardProyects"
 export * from "./Header/Header"
 export * from './InfoCard/InfoCard'
 export * from "./InfoText/InfoText"
 export * from "./InputPortfolio/InputPortfolio"
 export * from "./NavBar/NavBar"
-export * from "./OurServices/OurServices"
+export * from './MobileNavbar/MobileNavbar'
+export * from "./MobileServices/MobileServices"
+export * from "./CardOurServices/CardOurServices"
 export * from './ProfileCard/ProfileCard'
 export * from "./ServiceCard/ServiceCard"
 export * from './SocialMediaButton/SocialMediaButton'
-export * from "./OurServices/OurServices"

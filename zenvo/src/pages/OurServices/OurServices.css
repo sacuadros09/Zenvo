@@ -1,0 +1,20 @@
+.title-transform{
+    color: #98DFFD;
+}
+
+.who-we-are{
+    display: none;
+}
+
+.transform{
+    display: none;
+}
+
+
+
+@media (min-width:768px){
+    .who-we-celphone{
+        display: none;
+    }
+   
+}
