@@ -15,9 +15,6 @@ return (
         <button className='burguer-menu' onClick={handleClick}>
             <img src={burguerMenu}/>
         </button>
-        <section>
-            {!showMenu ? null : <MobileNavbar/>}
-        </section>
         <div className="list-navbar">
             <img className="logo" src="/src/assets/Logo.png"/>
             <NavBar text= "Home" url='/'/>
@@ -25,6 +22,9 @@ return (
             <NavBar text= "Services" url="/OurServices"/>
             <NavBar text= "Portfolio"/>
         </div>
+        <section>
+            {!showMenu ? null : <MobileNavbar/>}
+        </section>
         <Button text= "Contact Us"/>
         
     </nav>
