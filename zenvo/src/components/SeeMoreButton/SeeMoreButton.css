@@ -1,13 +1,15 @@
-.contactus-button{
+.seemore-button{
     background-color: #FF51F8;
     color: white;
     border: 0;
     box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
-    width: 120px;
-    height: 30px;
+    width: 106px;
+    height: 29px;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
+    
 }

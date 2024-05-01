@@ -1,8 +1,8 @@
-import './Button.css'
-export function Button(props) {
+import "./SeeMoreButton.css"
+export function SeeMoreButton(props) {
     const {text, url} = props
     return (
-        <button className="contactus-button">
+        <button className="seemore-button">
             <p>{text}</p> 
             {url}
         </button>

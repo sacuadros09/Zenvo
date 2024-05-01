@@ -13,5 +13,6 @@ export * from './MobileNavbar/MobileNavbar'
 export * from "./MobileServices/MobileServices"
 export * from "./CardOurServices/CardOurServices"
 export * from './ProfileCard/ProfileCard'
+export * from "./SeeMoreButton/SeeMoreButton"
 export * from "./ServiceCard/ServiceCard"
 export * from './SocialMediaButton/SocialMediaButton'

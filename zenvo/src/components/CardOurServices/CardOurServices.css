@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .cardservices-ourservices img {
     width: 356px; 
     height: 237px;
@@ -6,13 +8,19 @@
 }
 
 .cardservices-ourservices h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     color: #98DFFD;
-    margin-left: 14px;
+    margin-top: 25px;
+    margin-left: 12px;
 }
 
 .cardservices-ourservices p {
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color:white;
-    text-align: center;
+    text-align: start;
+    padding: 11px;
 }
+
