@@ -66,5 +66,13 @@
     padding-top: 40px;
 
 }
+
+.services-card{
+    background-color: rgba(217, 217, 217, 0.0);
+    width: 775px; 
+    height: 423px;
+}
+
+
    
 }

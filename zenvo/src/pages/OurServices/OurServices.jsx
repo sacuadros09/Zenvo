@@ -16,6 +16,7 @@ return(
             <h2 className="transform-letter">"We transform ideas into exceptional digital experiences, where creativity and innovation are in every pixel."</h2>
         </div>
         
+      <div className="services-container">
     {dataServices.map(({id,img,title,description}) => {
     return(
     <div key={id} className="services-card">
@@ -27,5 +28,6 @@ return(
     )
     })}
     </div>
+    </div>  
 )
 }

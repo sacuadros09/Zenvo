@@ -24,3 +24,30 @@
     padding: 11px;
 }
 
+@media (min-width:768px){
+
+
+    .cardservices-ourservices img {
+        width: 775px; 
+        height: 423px;
+    }
+    
+    .cardservices-ourservices h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: #98DFFD;
+        margin-top: 25px;
+        margin-left: 12px;
+    }
+    
+    .cardservices-ourservices p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        color:white;
+        text-align: start;
+    }
+    
+
+}
+
