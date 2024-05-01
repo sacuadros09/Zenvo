@@ -8,6 +8,9 @@ return(
         <div className="about-we-are">
             <InfoText variant="infotext-aboutus" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions that make a lasting impact. Specializing in innovative and engaging interfaces, we focus on UX/UI and frontend expertise to merge functionality with design, ensuring every detail contributes to an exceptional user experience.?" img="/src/assets/RobotAbout.png"></InfoText>
         </div> 
+        <div className="about-cellphone">
+            <InfoText variant="infoabout-cellphone" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions see more..."></InfoText>
+        </div> 
     {dataAbout.map(({id,img,name}) => {
     return(
     <div key={id} className="about-profile">
