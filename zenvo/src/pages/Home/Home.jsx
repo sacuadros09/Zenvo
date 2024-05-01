@@ -40,6 +40,9 @@ return(
                 <img key={id} src={img}/>
             ))}
         </section>
+        <section className="proyects-section">
+            
+        </section>
     </div>
 )
 }
