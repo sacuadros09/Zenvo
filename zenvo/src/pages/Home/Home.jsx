@@ -9,6 +9,7 @@ import { dataSkills } from "../../services/dataSkills"
 export function Home () {
 return(
     <div className="body">
+        <div className="navbar-space"/>
         <img className="slogan-img" src={slogan}/>
         <section className="whoweare-section">
             <h1 className="whoweare-title">Who we are?</h1>
@@ -25,8 +26,8 @@ return(
         </section>
         <section className="ourteam-section">
                 <h1>Our Team</h1>
-                {dataAbout.map(({id, name, talents, img2, behance, github}) => (
-                    <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} github={github}/>
+                {dataAbout.map(({id, name, talents, img2, behance, github, link}) => (
+                    <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} github={github} link={link}/>
                 ))}
         </section>
         <section className="ourservices-section">

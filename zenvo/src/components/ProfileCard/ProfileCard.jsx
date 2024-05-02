@@ -4,7 +4,7 @@ import gitHubImg from '../../assets/github.png'
 import './ProfileCard.css'
 
 export function ProfileCard(props) {
-    const {name, skills, behance, gitHub, img} = props
+    const {name, skills, behance, gitHub, img, link} = props
     return (
         <div>
             <div>
@@ -14,7 +14,7 @@ export function ProfileCard(props) {
                     <SocialMediaButton img={behanceImg} link={behance}/>
                     <SocialMediaButton img={gitHubImg} link={gitHub}/>
                 </div>
-                <Button text="See more"/>
+                <Button url={link} text="See more"/>
             </div>
             <img src={img}/>
         </div>

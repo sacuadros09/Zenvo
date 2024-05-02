@@ -14,7 +14,7 @@ export const dataAbout = [
         skill4: "Front-End Development",
         studies1: "Interactive Media Design - ICESI University",
         studies2: "Communication with Digital Focus - ICESI University",
-        link:"",
+        link:"./Profile",
     },
     {
         id: crypto.randomUUID(),
@@ -31,7 +31,7 @@ export const dataAbout = [
         skill4: "Photography ",
         studies1: "Interactive Media Design - Icesi University",
         studies2: "",
-        link:"",
+        link:"./Profile",
     },
     {
         id: crypto.randomUUID(),
@@ -48,7 +48,7 @@ export const dataAbout = [
         skill4: "",
         studies1: "Interactive Media Design - ICESI University",
         studies2: "",
-        link:"",
+        link:"./Profile",
     },
     {
         id: crypto.randomUUID(),
@@ -65,7 +65,7 @@ export const dataAbout = [
         skill4: "",
         studies1: "Interactive Media Design - ICESI University",
         studies2: "",
-        link:"",
+        link:"./Profile",
     },
 
 ]
