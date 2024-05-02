@@ -2,9 +2,9 @@ import {Button } from '../index'
 import "./CardProyects.css"
 
 export function CardProyects (props) {
-    const { img,title,text, url, name } = props
+    const { img,title,text, url, name, variant } = props
     return (
-      <div>
+      <div className={variant}>
         <img src={img} />
         <h1>{title}</h1>
         <p>{text}</p>
@@ -13,4 +13,4 @@ export function CardProyects (props) {
       </div>
       
     )
-  }
+}

@@ -4,7 +4,7 @@ export function ServiceCard(props) {
     const {title, img, url} = props
     return (
         <button>
-            <img>{img}</img> 
+            <img src={img}/> 
             <p>{title}</p>
             {url}
         </button>

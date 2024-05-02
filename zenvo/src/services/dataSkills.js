@@ -1,62 +1,62 @@
- export const dataSkills = [
+export const dataSkills = [
     {
         id: crypto.randomUUID(),
-        img: '../assets/html-icon.png'
+        img: '/src/assets/html-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/css-icon.png'
+        img: '/src/assets/css-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/js-icon.png'
+        img: '/src/assets/js-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/ts-icon.png'
+        img: '/src/assets/ts-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/vsc-icon.png'
+        img: '/src/assets/vsc-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/react-icon.png'
+        img: '/src/assets/react-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/node-icon.png'
+        img: '/src/assets/node-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/firebase-icon.png'
+        img: '/src/assets/firebase-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/figma-icon.png'
+        img: '/src/assets/figma-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/illustrator-icon.png'
+        img: '/src/assets/illustrator-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/photoshop-icon.png'
+        img: '/src/assets/photoshop-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/procreate-icon.png'
+        img: '/src/assets/procreate-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/blender-icon.png'
+        img: '/src/assets/blender-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/github-icon.png'
+        img: '/src/assets/github-icon.png'
     },
     {
         id: crypto.randomUUID(),
-        img: '../assets/unity-icon.png'
+        img: '/src/assets/unity-icon.png'
     },
 ]
