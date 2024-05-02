@@ -91,6 +91,10 @@
         border-radius: 30px;
     }
 
+    .profile-cards{
+        overflow-x: hidden;
+    }
+
     .infocards-section{
         display: flex;
         flex-direction: row-reverse;
