@@ -1,0 +1,34 @@
+.profile-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+    background-color: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 242, 242, 0.08);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.profilecard-img{
+    max-height: 100px;
+}
+
+.profilecard-info h2{
+    color: #98DFFD;
+    font-size: 20px;
+}
+
+.profilecard-info *{
+    margin-bottom: 10px;
+}
+
+.profilecard-info p{
+    color: white;
+}
+
+.socialmedia-div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

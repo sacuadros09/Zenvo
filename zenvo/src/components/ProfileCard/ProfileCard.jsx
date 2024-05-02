@@ -6,17 +6,17 @@ import './ProfileCard.css'
 export function ProfileCard(props) {
     const {name, skills, behance, gitHub, img, link} = props
     return (
-        <div>
-            <div>
-                <h2>{name}</h2>
+        <div className='profile-card'>
+            <div className='profilecard-info'>
+                <h2><strong>{name}</strong></h2>
                 <p>{skills}</p>
-                <div>
+                <div className='socialmedia-div'>
                     <SocialMediaButton img={behanceImg} link={behance}/>
                     <SocialMediaButton img={gitHubImg} link={gitHub}/>
                 </div>
                 <Button url={link} text="See more"/>
             </div>
-            <img src={img}/>
+            <img  className='profilecard-img' src={img}/>
         </div>
         
     )

@@ -15,7 +15,7 @@ return(
             <h1 className="home-title"><strong>Who we are?</strong></h1>
             <p className="infocards-p">We are a dynamic team dedicated to revolutionizing the digital landscape through innovative design solutions.</p>
             <div className="infocards-section">
-                <img src={allGroup}/>
+                <img className="img-allgroup" src={allGroup}/>
                 <div className="info-cards">
                     <InfoCard title="Creativity and Innovation" text="We thrive on creativity and innovation, constantly pushing boudaries."/>
                     <InfoCard title="Client-Centric Approach" text="Our focus is on meeting our client's needs and goals."/>
@@ -28,21 +28,27 @@ return(
         </section>
         <section className="ourteam-section">
                 <h1 className="home-title"><strong>Our Team</strong></h1>
-                {dataAbout.map(({id, name, talents, img2, behance, github, link}) => (
-                    <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} github={github} link={link}/>
-                ))}
+                <div className="profile-cards">
+                    {dataAbout.map(({id, name, talents, img2, behance, github, link}) => (
+                        <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} gitHub={github} link={link}/>
+                    ))}
+                </div>
         </section>
         <section className="ourservices-section">
             <h1 className="home-title"><strong>Our Services</strong></h1>
-            {dataServices.map(({id, img, title}) => (
-                <ServiceCard key={id} img={img} title={title}/>
-            ))}
+            <div className="service-cards">
+                {dataServices.map(({id, img, title}) => (
+                    <ServiceCard key={id} img={img} title={title}/>
+                ))}
+            </div>
         </section>
         <section className="ourskills-section">
             <h1 className="home-title"><strong>Our Skills</strong></h1>
-            {dataSkills.map(({id, img}) => (
-                <img key={id} src={img}/>
-            ))}
+            <div className="skills-cards">
+                {dataSkills.map(({id, img}) => (
+                    <img key={id} src={img}/>
+                ))}
+            </div>
         </section>
         <section className="proyects-section">
             
