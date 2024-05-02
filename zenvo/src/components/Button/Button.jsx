@@ -9,6 +9,5 @@ export function Button(props) {
                 <p>{text}</p> 
             </button>
         </Link>
-        
     )
 }

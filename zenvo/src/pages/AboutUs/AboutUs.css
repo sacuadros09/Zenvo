@@ -1,0 +1,14 @@
+.about-we-are {
+    display: none;
+}
+
+
+
+    
+
+@media (min-width:768px){
+    .about-cellphone{
+        display: none;
+    }
+   
+}

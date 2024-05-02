@@ -7,5 +7,6 @@ export function NavBar(props) {
         <Link to={url}>
             <button className="bg-transparent text-white"><strong>{text}</strong></button>
         </Link>
+        
     );
 }
