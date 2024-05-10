@@ -21,7 +21,7 @@ import { dataPortfolio } from '../../services/DataPortfolio'
       Explore our portfolio and be inspired by the art of design at <strong> Zenvo Studio.</strong>
       </p></p>
       </div>
-      <img className='pet-banner' src='../../src/assets/robot-portfolio.png'/>
+      <img className='pet-banner' src='/src/assets/robot-portfolio.png'/>
       </section>
     <div className='input-filter'>
     <InputPortfolio img1='../../src/assets/icon-search.png' text="Search project" />
