@@ -1,5 +1,5 @@
 import "./OurServices.css"
-import { InfoText, SeeMoreButton, CardOurServices,} from "../../components"
+import { InfoText, Button, CardOurServices} from "../../components"
 import { dataServices } from "../../services/dataServices"
 
 export function OurServices () {  
@@ -21,11 +21,13 @@ return(
     {dataServices.map(({id,img,title,description}) => {
     return(
     <div key={id} className="services-card">
-    <CardOurServices variant="cardservices-ourservices" img={img} title={title} description={description}></CardOurServices>  
-    <div className="ourservices-button">
-    <SeeMoreButton text="see more"/>
+    <CardOurServices variant="cardservices-ourservices" img={img} title={title} description={description} ></CardOurServices>  
+    <Button variant="our-button" text="see more" url="/UxServicePage"/>
+    <div>
+   
     </div>
     </div>
+    
     )
     })}
     </div>

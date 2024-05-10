@@ -1,0 +1,246 @@
+
+.title-portfolio{
+    font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        font-style: normal;
+        color: #98DFFD;
+        text-shadow: 1px 1px 1px #00000091;
+        justify-content: center;
+        display: flex;
+        margin-right: 8%;
+}
+
+.component-portfolio{
+    display: flex;
+    margin-top: 10%;
+    
+}
+
+.first-part-text{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 26%;
+}
+
+
+
+.third-part-text{
+    color: #FF51F8;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.third-deskpart{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+}
+
+.clients-part{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: none;
+}
+
+.four-part-text{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: none;
+}
+
+.last-part{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: none;
+}
+
+.hamburguer-btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+
+.hamburguer-img{
+    width: 20px;
+    height: 20px;
+}
+.input-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 5%;
+}
+.filter-btn{
+    border: 1px solid #5997F3;
+    background-color: rgb(133, 139, 227, 0.50);
+    border-radius: 6px;
+    width: 14vw;
+    height: 35px;
+    justify-content: center;
+}
+
+.filter-btn-desk{
+    border: 1px solid #5997F3;
+    background-color: rgb(133, 139, 227, 0.50);
+    border-radius: 6px;
+    width: 14vw;
+    height: 35px;
+    justify-content: center;
+    display: none;
+}
+
+.disapear{
+    display: none;
+}
+
+.pet-banner{
+    display: none;
+}
+
+.title-text-portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-text-banner{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+  @media (min-width: 768px){
+
+
+    .title-text-portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-text-banner{
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+
+    .title-portfolio{
+        
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 96px;
+        font-style: normal;
+        text-shadow: 3px 3px 3px #00000091;
+        justify-content: flex-start;
+        display: flex;
+        color: #98DFFD;
+        margin-left: 2%;
+    }
+
+    .pet-banner{
+        display: flex;
+        height: 607.41px;
+        margin-right: 2%;
+        margin-top: 3%;
+       
+    }
+
+    .first-part-text{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+       display: block;
+       width: 65%;
+       font-size: 27px;
+       margin-left: 3%;
+       margin-top: 23%;
+       text-align: justify;
+        
+    }
+    
+    
+    
+    .third-part-text{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: none;
+    }
+
+    .disapear{
+        display: block;
+    }
+
+    .pharagraph{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .input-filter{
+        display: flex;
+        flex-direction: row;
+        gap: 6%;
+        margin-left: 25%;
+        margin-top: 0%;
+    }
+
+
+      .filter-btn-desk{
+        border: 1px solid #5997F3;
+        background-color: rgb(133, 139, 227, 0.50);
+        border-radius: 6px;
+        width: 7vw;
+        height: 35px;
+        justify-content: center;
+        color: #5997F3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        font-style: normal;
+        display: flex;
+    }
+
+    .filter-img{
+        height: 21px;
+        position: absolute;
+        top: 729px;
+        right: 798px;
+        display: flex;
+        align-items: start;
+    }
+    
+
+      .filter-btn{
+        border: 1px solid #5997F3;
+        background-color: rgb(133, 139, 227, 0.50);
+        border-radius: 6px;
+        width: 14vw;
+        height: 35px;
+        justify-content: center;
+        display: none;
+    }
+
+    .component-portfolio {
+        display: flex;
+        margin-top: 6%;
+        width: 60%;
+        margin-left: 16%;
+      }
+   
+}

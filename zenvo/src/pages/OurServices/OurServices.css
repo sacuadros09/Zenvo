@@ -25,14 +25,13 @@
     margin-bottom: 50px;    
 }
 
-.services-card{
+.services-card {
     background-color: rgba(217, 217, 217, 0.1);
-    width: 356px; 
-    display: flex; 
-    margin: 0 auto;
     border-radius: 10px;
-
+    width: 380px;
+    margin-left: 3px;
 }
+
 
     
 
@@ -61,7 +60,7 @@
     font-size: center;
     padding-right: 300px;
     padding-left: 300px;
-    padding-top: 40px;
+    padding-top: 10px;
 
 }
 
@@ -69,6 +68,11 @@
     background-color: rgba(217, 217, 217, 0.0);
     width: 775px; 
     height: 423px;
+}
+
+.cardservices-ourservices{
+   display: flex;
+   flex-direction: row;
 }
 
 

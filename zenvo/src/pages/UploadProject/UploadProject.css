@@ -1,0 +1,207 @@
+.banner-upload{
+    height: 80px;
+    display: flex;
+}
+
+.title-upload{
+    font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        font-style: normal;
+        color: #98DFFD;
+        text-shadow: 1px 1px 1px #00000091;
+        justify-content: center;
+        display: flex;
+        margin-top: 24%;
+}
+
+.container-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B275A;
+    padding: 13%;
+    border-radius: 20px;
+    margin-top: 3%;
+}
+
+label{
+    color: #858BE3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+
+}
+
+.form-upload{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30%;
+}
+
+.inputs-upload{
+    gap: 10px;
+}
+
+.subtitle-upload{
+    color: #858BE3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    margin-left: -59%;
+}
+
+.sec-checklist{
+    display: block;
+    margin-right: 39%;
+    width: 29%;
+}
+
+
+.list-check2{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 401%;
+  margin-top: -4%;
+  margin-left: -132%;
+}
+
+.list-check1{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -4%;
+  margin-left: -138%;
+  width: 401%;
+}
+
+.secsubtitle-upload{
+    color: #858BE3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    margin-left: -71%;
+}
+
+@media (min-width: 768px){
+
+    .container-upload{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2B275A;
+        
+        border-radius: 20px;
+        margin-top: 3%;
+        width: 28vw;
+        margin-left: 26%;
+        height: 4px;
+      }
+    .banner-upload{
+        height: 80px;
+        display: none;
+    }
+
+    .title-upload {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        font-style: normal;
+        color: #98DFFD;
+        text-shadow: 1px 1px 1px #00000091;
+        justify-content: center;
+        display: flex;
+        margin-top: 1%;
+        margin-left: -14%;
+    }
+
+    .form-upload{
+        display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: -33%;
+    }
+
+    .first-input-upload{
+
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 3%;
+    margin-left: 4%;
+
+    }
+
+    .label{
+        color: #858BE3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+    
+    }
+
+    .second-input-upload{
+
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        gap: 3%;
+        margin-left: 4%;
+
+    }
+
+    .subtitle-upload {
+        color: #858BE3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+        margin-top: 10%;
+      }
+
+      .list-check1{
+        width: 115%;
+        margin-top: 19%;
+        display: flex;
+        flex-direction: column;
+        margin-left: -89%;
+  
+    }
+
+    .list-check2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20%;
+        margin-left: -102%;
+        width: 90%;  
+    }
+
+    .secsubtitle-upload{
+        color: #858BE3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+        margin-left: -33%;
+        width: 86%;
+        margin-top: 10%;
+    }
+
+    .sec-checklist{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    gap: 40%;
+    margin-top: 3%;
+    }
+
+   
+
+
+
+    
+    }

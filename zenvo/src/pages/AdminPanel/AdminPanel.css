@@ -1,0 +1,75 @@
+.banner-admin{
+    height: 80px;
+    margin-top: -10%;
+}
+
+.title-admin{
+    font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        font-style: normal;
+        color: #98DFFD;
+        text-shadow: 1px 1px 1px #00000091;
+        justify-content: center;
+        display: flex;
+        margin-right: -4%;
+        margin-top: 20%;
+}
+
+.container-adminpanel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B275A;
+    padding: 13%;
+    border-radius: 20px;
+    margin-top: 6%;
+}
+
+.inputs-admin{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2%;
+  margin-top: 22%;
+}
+
+
+@media (min-width: 768px){
+    .title-admin{
+        font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            font-style: normal;
+            color: #98DFFD;
+            text-shadow: 1px 1px 1px #00000091;
+            justify-content: center;
+            margin-top: 16%;
+            margin-left: -18%;
+           
+    }
+
+    .banner-admin{
+        height: 162.37px;
+    
+    }
+
+    .container-adminpanel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2B275A;
+        padding: 5%;
+        border-radius: 20px;
+        width: 632px;
+        height: 577px;
+        margin-left: 31%;
+        margin-top: 3%;
+        justify-content: center;
+        align-content: center;
+      }
+
+    .footer-admin{
+        display: none;
+    }
+}
