@@ -1,0 +1,97 @@
+.input-admin{
+    border: 1px solid #5997f300;
+    background-color: rgba(133, 139, 227, 0);
+    border-radius: 8px;
+    height: 34px;
+    outline: none;
+    margin-top: -1%;
+}
+
+.input-admin::placeholder{
+    color: #5997F3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+.div-input-admin{
+display: flex;
+flex-direction: row;
+border: 1px solid #5997F3;
+    background-color: rgb(133, 139, 227, 0.50);
+    border-radius: 8px;
+    height: 34px;
+    width: 72vw;
+}
+
+.input-img1{
+  height: 20px;
+  padding: 2%;
+}
+
+.input-img3{
+  height: 20px;
+  padding: 2%;
+  justify-content: center;
+  display: flex;
+  margin-left: 40%;
+  flex-direction: row;
+}
+
+.input-img2{
+    height: 20px;
+  padding: 2.5%;
+  margin-left: 28%;
+  }
+
+  @media (min-width: 768px){
+
+    .input-admin{
+        border: 1px solid #5997f300;
+        background-color: rgba(133, 139, 227, 0);
+        height: 34px;
+        border-radius: 5px;
+        outline: none;
+        margin-top: 0%;
+        margin-left: -6px;
+    }
+    
+    .input-admin::placeholder{
+        color: #5997F3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+    }
+    
+    .div-input-admin{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #5997F3;
+    background-color: rgb(133, 139, 227, 0.50);
+    height: 34px;
+    width: 25vw;
+    border-radius: 5px;
+    }
+    
+    .input-img1{
+      height: 20px;
+      padding: 2%;
+    }
+    
+    .input-img2{
+        height: 20px;
+      padding: 2.5%;
+      margin-left: 28%;
+      }
+
+  }

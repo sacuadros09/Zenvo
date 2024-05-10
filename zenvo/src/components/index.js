@@ -1,6 +1,7 @@
 export * from './Button/Button'
 export * from "./Button2/Button2"
 export * from "./Button3/Button3"
+export * from "./CarouselMobile/CarouselMobile"
 export * from "./CardBenefits/CardBenefits"
 export * from "./CardWeAre/CardWeAre"
 export * from "./CardProyects/CardProyects"
@@ -16,3 +17,9 @@ export * from './ProfileCard/ProfileCard'
 export * from "./SeeMoreButton/SeeMoreButton"
 export * from "./ServiceCard/ServiceCard"
 export * from './SocialMediaButton/SocialMediaButton'
+export * from "./FooterDesktop/FooterDesktop"
+export * from "./FooterMobile/FooterMobile"
+export * from "./CardPortfolio/CardPortfolio"
+export * from "./InputAdmin/InputAdmin"
+export * from "./InputPortfolio/InputPortfolio"
+export * from "./InputUpload/InputUpload"

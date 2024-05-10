@@ -1,4 +1,4 @@
- import './InputPortfolio.css'
+import './InputPortfolio.css'
  
 export function InputPortfolio (props) {
     const { img1, img2, type, text } = props

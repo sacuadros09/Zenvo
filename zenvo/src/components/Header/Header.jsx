@@ -20,7 +20,7 @@ return (
             <NavBar text= "Home" url='/'/>
             <NavBar text= "About Us" url='/AboutUs'/>
             <NavBar text= "Services" url="/OurServices"/>
-            <NavBar text= "Portfolio"/>
+            <NavBar text= "Portfolio" url="/PortfolioPage"/>
         </div>
         <section>
             {!showMenu ? null : <MobileNavbar/>}

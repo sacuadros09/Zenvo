@@ -1,0 +1,41 @@
+.input-check{
+    display: flex !important;
+    flex-direction: row !important;
+    border: 1px solid #5997F3 !important;
+    background-color: rgba(133, 139, 227, 0.5) !important;
+}
+
+.div-input-check{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-checkbox{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@media (min-width: 768px){
+
+    .input-check{
+        display: flex !important;
+        flex-direction: row !important;
+        border: 1px solid #5997F3 !important;
+        background-color: rgba(133, 139, 227, 0.5) !important;
+    }
+    
+    .div-input-check{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .name-checkbox{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+}

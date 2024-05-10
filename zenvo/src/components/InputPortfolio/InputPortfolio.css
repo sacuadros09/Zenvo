@@ -1,0 +1,91 @@
+.input-port{
+    border: 1px solid #5997f300;
+    background-color: rgba(133, 139, 227, 0);
+    border-radius: 8px;
+    height: 34px;
+    margin-left: 9%;
+    outline: none;
+    margin-top: -1%;
+}
+
+.input-port::placeholder{
+    color: #5997F3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+.div-input-port{
+display: flex;
+flex-direction: row;
+border: 1px solid #5997F3;
+    background-color: rgb(133, 139, 227, 0.50);
+    border-radius: 8px;
+    height: 34px;
+    width: 72vw;
+}
+
+.search-img{
+    height: 20px;
+    width: 5vw;
+    position: absolute;
+    top: 283px;
+    left: 15px;
+}
+
+@media (min-width: 768px){
+
+    .input-port{
+        border: 1px solid #5997f300;
+        background-color: rgba(133, 139, 227, 0);
+        border-radius: 8px;
+        height: 41px;
+        margin-left: 6%;
+        outline: none;
+        margin-top: -1%;
+    }
+
+    
+    
+    .input-port::placeholder{
+        color: #5997F3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+    }
+    
+    .div-input-port{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #5997F3;
+        background-color: rgb(133, 139, 227, 0.50);
+        border-radius: 8px;
+        height: 34px;
+        width: 27vw;
+    }
+    
+  
+   
+    .search-img {
+        width: 1vw;
+        position: absolute;
+        top: 731px;
+        left: 493px;
+        display: block;
+      }
+    
+
+    
+
+}
+
