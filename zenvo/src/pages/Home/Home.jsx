@@ -37,8 +37,8 @@ return(
         <section className="ourservices-section">
             <h1 className="home-title"><strong>Our Services</strong></h1>
             <div className="service-cards">
-                {dataServices.map(({id, img, title}) => (
-                    <ServiceCard key={id} img={img} title={title}/>
+                {dataServices.map(({id, img, title, path}) => (
+                    <ServiceCard path={path} key={id} img={img} title={title}/>
                 ))}
             </div>
         </section>

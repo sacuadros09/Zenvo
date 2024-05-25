@@ -18,11 +18,11 @@ return(
         </div>
         
       <div className="services-container">
-    {dataServices.map(({id,img,title,description}) => {
+    {dataServices.map(({id,img,title,description,path}) => {
     return(
     <div key={id} className="services-card">
     <CardOurServices variant="cardservices-ourservices" img={img} title={title} description={description} ></CardOurServices>  
-    <Button variant="our-button" text="see more" url="/UxServicePage"/>
+    <Button path={path }variant="our-button" text="see more" url="/UxServicePage"/>
     <div>
    
     </div>

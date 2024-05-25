@@ -18,6 +18,7 @@ export function AppRouter() {
         <Route path='/UiServicePage' element={<UiServicePage/>} />
         <Route path='/UploadPage' element={<UploadPage/>} />
         <Route path='/UxServicePage' element={<UxServicePage/>} />
+        
         <Route path='/*' element={<p>404</p>} />
       </Routes>
 

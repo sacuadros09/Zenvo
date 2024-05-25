@@ -2,9 +2,9 @@ import './ServiceCard.css'
 import { Link } from "react-router-dom";
 
 export function ServiceCard(props) {
-    const {title, img, url} = props
+    const {title, img,path} = props
     return (
-        <Link to={url}>
+        <Link to={path}>
             <button className='service-card'>
                 <img src={img}/> 
                 <p>{title}</p>
