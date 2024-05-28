@@ -4,6 +4,7 @@ const CardsUi = [{
     tittle: 'Wireframes and Interactive Prototyping Design',
     description: 'We create detailed wireframes and interactive prototypes that represent the structure and flow of the user experience, enabling early visualization and evaluation of the proposed solution.',
     img: '../../src/assets/down-arrow.png'
+    
   },
   {
     id: crypto.randomUUID(),

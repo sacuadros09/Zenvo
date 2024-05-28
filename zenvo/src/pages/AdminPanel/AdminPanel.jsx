@@ -1,27 +1,68 @@
 import './AdminPanel.css' 
-
-import { Button3,InputAdmin,Button,FooterMobile } from '../../components/index'
+import { auth } from '../../firebase/firebase'
+import { Button3,FooterMobile } from '../../components/index'
+import { useState } from 'react'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { Link } from 'react-router-dom'
 
  export function AdminPanelPage () {
-   return (
-    <>
-      <section>
-        <Button3 text='Back' img = '' />
 
+  const [email,setEmail] = useState("")
+  const [password,setPassword] = useState("")
+  const [errorMessage,setErroMessage] = useState("")
+
+  const signIn = (e) =>{
+   e.preventDefault()
+   signInWithEmailAndPassword(auth,email,password)
+   .then((userCredential) => {
+    console.log(userCredential)
+   })
+
+   .catch((error) => {
+    console.error(error);
+    setErroMessage('Failed to log in. Please check your email and password.');
+  });
+
+  }
+  return (
+    <>  
+      <section>
+        <Button3 text='Back' img='' />
         <section className='container-adminpanel'>
-            <img className='banner-admin' src="../../src/assets/Logo1-zenvo.png" />
-            <h1 className='title-admin'> Administrador panel </h1>
-            <div className='inputs-admin'>
-            <InputAdmin img1 ='../../src/assets/user-icon.png' type= 'email'  text='Admin username' />
-            <InputAdmin img1='../../src/assets/lock-icon.png' type='password' text='Password' img2='../../src/assets/eye-icon.png' />
-            <Button text = 'Login' url="/UploadPage"/>
+            <img className='banner-admin' src='../../src/assets/Logo1-zenvo.png' alt='Banner' />
+            <h1 className='title-admin'>Administrador panel</h1>
+            <div className='inputs-contain'>
+                <form className='admin-form' onSubmit={signIn}>
+                    <div>
+                        
+                        <input 
+                            className='inputs-admin'
+                            type='email'
+                            placeholder='Admin username'
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        
+                        <input
+                            className='inputs-admin'
+                            type='password'
+                            placeholder='Password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        
+                    </div>
+                    
+                    <button className='btn-login' type='submit'>Log in</button>
+                  
+                </form>
+                {errorMessage && <p>{errorMessage}</p>}
             </div>
         </section>
-        
-       </section>
-       <FooterMobile />
-     
-      
+      </section>
+      <FooterMobile />
     </>
-  )
-} 
+  );
+}

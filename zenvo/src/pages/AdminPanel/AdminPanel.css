@@ -1,59 +1,101 @@
-.banner-admin{
-    height: 80px;
-    margin-top: -10%;
+.banner-admin {
+    display: block;
+    margin: 20px auto; /* Añade margen superior e inferior para espacio */
+    max-width: 70%;
+    height: auto;
+    margin-left: 20%;
 }
 
-.title-admin{
-    font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-size: 28px;
-        font-style: normal;
-        color: #98DFFD;
-        text-shadow: 1px 1px 1px #00000091;
-        justify-content: center;
-        display: flex;
-        margin-right: -4%;
-        margin-top: 20%;
-}
-
-.container-adminpanel{
+.container-adminpanel {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #2B275A;
-    padding: 13%;
+    padding: 5%;
     border-radius: 20px;
-    margin-top: 6%;
+    margin: 10% auto;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
 }
 
-.inputs-admin{
+.title-admin {
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  font-style: normal;
+  color: #98DFFD;
+  text-shadow: 1px 1px 1px #00000091;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 2%;
-  margin-top: 22%;
 }
 
 
-@media (min-width: 768px){
-    .title-admin{
-        font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            font-size: 40px;
-            font-style: normal;
-            color: #98DFFD;
-            text-shadow: 1px 1px 1px #00000091;
-            justify-content: center;
-            margin-top: 16%;
-            margin-left: -18%;
-           
-    }
 
-    .banner-admin{
-        height: 162.37px;
+.inputs-admin {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #5997F3;
+    background-color: rgba(133, 139, 227, 0.50);
+    border-radius: 8px;
+    height: 34px;
+    width: 72vw;
+    outline: none;
+    margin-bottom: 15px; /* Añade margen inferior a cada input */
+    padding: 0 10px; /* Añade padding interno para separar el placeholder */
+}
+
+
+
+.inputs-admin::placeholder {
+    color: #5997F3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.inputs-contain {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Añade espacio entre los inputs */
+    padding: 10px; /* Añade padding para más espacio alrededor */
+}
+
+.btn-login{
+    background-color: #FF51F8;
+  color: white;
+  border: 0;
+  box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.admin-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (min-width: 768px) {
+    .banner-admin {
+        display: block;
+        margin: 20px auto; /* Añade margen superior e inferior para espacio */
+        max-width: 70%;
+        height: auto;
+        margin-left: 20%;
+    }
     
-    }
-
     .container-adminpanel {
         display: flex;
         flex-direction: column;
@@ -61,15 +103,77 @@
         background-color: #2B275A;
         padding: 5%;
         border-radius: 20px;
-        width: 632px;
-        height: 577px;
-        margin-left: 31%;
-        margin-top: 3%;
+        margin: 10% auto;
+        width: 90%;
+        max-width: 800px;
+        box-sizing: border-box;
+    }
+    
+    .title-admin {
+        font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      font-style: normal;
+      color: #98DFFD;
+      text-shadow: 1px 1px 1px #00000091;
+      justify-content: center;
+      display: flex;
+    }
+    
+    
+    
+    .inputs-admin {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #5997F3;
+        background-color: rgba(133, 139, 227, 0.50);
+        border-radius: 8px;
+        height: 34px;
+        width: 25vw;
+        outline: none;
+        margin-bottom: 15px; /* Añade margen inferior a cada input */
+        padding: 0 10px; /* Añade padding interno para separar el placeholder */
+    }
+    
+    
+    
+    .inputs-admin::placeholder {
+        color: #5997F3;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal;
+        display: flex;
         justify-content: center;
+        align-items: center;
         align-content: center;
-      }
-
-    .footer-admin{
-        display: none;
+    }
+    
+    .inputs-contain {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Añade espacio entre los inputs */
+        padding: 10px; /* Añade padding para más espacio alrededor */
+    }
+    
+    .btn-login{
+        background-color: #FF51F8;
+      color: white;
+      border: 0;
+      box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+      width: 120px;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .admin-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
+
+

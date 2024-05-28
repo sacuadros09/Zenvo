@@ -1,6 +1,9 @@
 .banner-upload{
-    height: 80px;
-    display: flex;
+    display: block;
+    margin: 20px auto; /* Añade margen superior e inferior para espacio */
+    max-width: 70%;
+    height: auto;
+    margin-left: 20%;
 }
 
 .title-upload{
@@ -12,7 +15,7 @@
         text-shadow: 1px 1px 1px #00000091;
         justify-content: center;
         display: flex;
-        margin-top: 24%;
+       
 }
 
 .container-upload{
@@ -20,10 +23,14 @@
     flex-direction: column;
     align-items: center;
     background-color: #2B275A;
-    padding: 13%;
+    padding: 5%;
     border-radius: 20px;
-    margin-top: 3%;
+    margin: 10% auto;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
 }
+
 
 label{
     color: #858BE3;
@@ -37,9 +44,11 @@ label{
 .form-upload{
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 30%;
+  gap: 1px;
+  width: 100%;
+  align-self: flex-start;
 }
+
 
 .inputs-upload{
     gap: 10px;
@@ -51,30 +60,15 @@ label{
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
-    margin-left: -59%;
+    align-self: flex-start; /* Alinea el subtítulo al inicio */
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
 }
 
 .sec-checklist{
     display: block;
-    margin-right: 39%;
-    width: 29%;
-}
-
-
-.list-check2{
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 401%;
-  margin-top: -4%;
-  margin-left: -132%;
-}
-
-.list-check1{
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: -4%;
-  margin-left: -138%;
-  width: 401%;
+    width: 102%;
 }
 
 .secsubtitle-upload{
@@ -83,59 +77,96 @@ label{
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
-    margin-left: -71%;
+    align-self: flex-start; /* Alinea el subtítulo al inicio */
+    margin-bottom: 10px;
+   
+    
+}
+
+
+.list-check2{
+    display: grid;
+  
+  width: 100%;
+    gap: 2px;
+  margin-top: 5px;
+  
+}
+
+
+.list-check1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px; /* Añade espacio entre los elementos */
+    margin-top: 5px; /* Añade margen superior */
+    width: 100%; /* Ajusta el ancho al contenedor padre */
+}
+
+.btn-upload{
+    background-color: #FF51F8;
+    color: white;
+    border: 0;
+    box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.btn-logout{
+    background-color: #FF51F8;
+    color: white;
+    border: 0;
+    box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.buttons-upload{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 @media (min-width: 768px){
 
+    .banner-upload{
+        display: block;
+        margin: 20px auto; /* Añade margen superior e inferior para espacio */
+        max-width: 70%;
+        height: auto;
+        margin-left: 20%;
+    }
+    
+    .title-upload{
+        font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            font-style: normal;
+            color: #98DFFD;
+            text-shadow: 1px 1px 1px #00000091;
+            justify-content: center;
+            display: flex;
+           
+    }
+    
     .container-upload{
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #2B275A;
-        
+        padding: 5%;
         border-radius: 20px;
-        margin-top: 3%;
-        width: 28vw;
-        margin-left: 26%;
-        height: 4px;
-      }
-    .banner-upload{
-        height: 80px;
-        display: none;
+        margin: 10% auto;
+        width: 90%;
+        max-width: 800px;
+        box-sizing: border-box;
     }
-
-    .title-upload {
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        font-size: 28px;
-        font-style: normal;
-        color: #98DFFD;
-        text-shadow: 1px 1px 1px #00000091;
-        justify-content: center;
-        display: flex;
-        margin-top: 1%;
-        margin-left: -14%;
-    }
-
-    .form-upload{
-        display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: -33%;
-    }
-
-    .first-input-upload{
-
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    gap: 3%;
-    margin-left: 4%;
-
-    }
-
-    .label{
+    
+    
+    label{
         color: #858BE3;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -143,64 +174,97 @@ label{
         font-style: normal;
     
     }
-
-    .second-input-upload{
-
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        gap: 3%;
-        margin-left: 4%;
-
+    
+    .form-upload{
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      width: 100%;
+      align-self: flex-start;
     }
-
-    .subtitle-upload {
+    
+    
+    .inputs-upload{
+        gap: 10px;
+    }
+    
+    .subtitle-upload{
         color: #858BE3;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 15px;
         font-style: normal;
-        margin-top: 10%;
-      }
-
-      .list-check1{
-        width: 115%;
-        margin-top: 19%;
-        display: flex;
-        flex-direction: column;
-        margin-left: -89%;
-  
+        align-self: flex-start; /* Alinea el subtítulo al inicio */
+        margin-bottom: 10px;
+        margin-top: 10px;
+       
     }
-
-    .list-check2{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 20%;
-        margin-left: -102%;
-        width: 90%;  
+    
+    .sec-checklist{
+        display: block;
+        width: 102%;
     }
-
+    
     .secsubtitle-upload{
         color: #858BE3;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 15px;
         font-style: normal;
-        margin-left: -33%;
-        width: 86%;
-        margin-top: 10%;
+        align-self: flex-start; /* Alinea el subtítulo al inicio */
+        margin-bottom: 10px;
+       
+        
+    }
+    
+    
+    .list-check2{
+        display: grid;
+      
+      width: 100%;
+        gap: 2px;
+      margin-top: 5px;
+      
+    }
+    
+    
+    .list-check1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px; /* Añade espacio entre los elementos */
+        margin-top: 5px; /* Añade margen superior */
+        width: 100%; /* Ajusta el ancho al contenedor padre */
     }
 
-    .sec-checklist{
-    display: flex;
-    flex-direction: row;
-    width: 65%;
-    gap: 40%;
-    margin-top: 3%;
+    .btn-upload{
+        background-color: #FF51F8;
+        color: white;
+        border: 0;
+        box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+        width: 120px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 15px;
     }
-
-   
-
+    
+    .btn-logout{
+        background-color: #FF51F8;
+        color: white;
+        border: 0;
+        box-shadow: -1px -1px 15px #ff51f949, 1px 1px 15px #ff51f949;
+        width: 120px;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    
+    .buttons-upload{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    
 
 
     
