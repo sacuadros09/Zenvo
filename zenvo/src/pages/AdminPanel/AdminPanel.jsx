@@ -3,7 +3,7 @@ import { auth } from '../../firebase/firebase'
 import { Button3,FooterMobile } from '../../components/index'
 import { useState } from 'react'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { Link } from 'react-router-dom'
+
 
  export function AdminPanelPage () {
 

@@ -1,10 +1,10 @@
 import './UploadProject.css' 
-import { useState,useEffect} from 'react'
+import { useState} from 'react'
 import { storage,db } from '../../firebase/firebase'
 import { collection,addDoc } from 'firebase/firestore'
 import { ref,uploadBytes, getDownloadURL} from 'firebase/storage'
 import { v4 as uuidv4  } from 'uuid'
-import { Button3,InputAdmin,InputUpload} from '../../components/index'
+import { Button3} from '../../components/index'
 
 export function UploadPage() {
   const [infoData, setInfoData] = useState({
@@ -19,7 +19,21 @@ export function UploadPage() {
 
   const [imageUpload, setImageUpload] = useState(null);
 
-  // Post storage
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInfoData(prevData => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleCheckboxChange = (name, value) => {
+    setInfoData(prevData => ({
+      ...prevData,
+      [name]: prevData[name].includes(value) ? prevData[name].filter(item => item !== value) : [...prevData[name], value]
+    }));
+  };
+
   const uploadImage = async () => {
     if (!imageUpload) return;
     const imageRef = ref(storage, `images/${imageUpload.name + uuidv4()}`);
@@ -32,7 +46,8 @@ export function UploadPage() {
     };
 
     try {
-      await addDoc(collection(db, 'projects'), storageSaveData); // Usa addDoc y collection
+      await addDoc(collection(db, 'projects'), storageSaveData);
+      console.log('Project added successfully');
     } catch (error) {
       console.error('Error adding project: ', error);
     }
@@ -50,26 +65,29 @@ export function UploadPage() {
           <form className='form-upload'>
             <div className='divs-inputs-upload'>
               <label className='label1'>Title</label>
-              <InputAdmin
+              <input className='input-proyects'
                 type='text'
                 placeholder="Title"
-                onChange={(e) => setInfoData({ ...infoData, title: e.target.value })}
+                name="title"
+                onChange={handleChange}
               />
               <label>Project link</label>
-              <InputAdmin
+              <input className='input-proyects'
                 type='text'
                 placeholder="Url Behance"
-                onChange={(e) => setInfoData({ ...infoData, behance: e.target.value })}
+                name="behance"
+                onChange={handleChange}
               />
               <label>Description</label>
-              <InputAdmin
+              <input className='input-proyects'
                 type='text'
                 placeholder="Description of the project"
-                onChange={(e) => setInfoData({ ...infoData, description: e.target.value })}
+                name="description"
+                onChange={handleChange}
               />
               <div className='custom-input-file'>
                 <label>Image</label>
-                <input
+                <input className='input-proyects'
                   type="file"
                   onChange={(event) => {
                     setImageUpload(event.target.files[0]);
@@ -83,46 +101,64 @@ export function UploadPage() {
             <div>
               <h4 className='subtitle-upload'>Project members</h4>
               <ul className='list-check1'>
-                <InputUpload
-                  text='Katherine Reyes'
-                  onChange={() => setInfoData({ ...infoData, members: [...infoData.members, 'Katherine Reyes'] })}
-                />
-                <InputUpload
-                  text='Sebastián Gonzalez'
-                  onChange={() => setInfoData({ ...infoData, members: [...infoData.members, 'Sebastián Gonzalez'] })}
-                />
-                <InputUpload
-                  text='Juan David Avila'
-                  onChange={() => setInfoData({ ...infoData, members: [...infoData.members, 'Juan David Avila'] })}
-                />
-                <InputUpload
-                  text='Santiago Cuadros'
-                  onChange={() => setInfoData({ ...infoData, members: [...infoData.members, 'Santiago Cuadros'] })}
-                />
+                <li>
+                  <label>
+                    <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Katherine Reyes')} />
+                    Katherine Reyes
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Sebastián Gonzalez')} />
+                    Sebastián Gonzalez
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Juan David Avila')} />
+                    Juan David Avila
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Santiago Cuadros')} />
+                    Santiago Cuadros
+                  </label>
+                </li>
               </ul>
             </div>
             <h4 className='secsubtitle-upload'>Type of project</h4>
             <ul className='list-check2'>
-              <InputUpload
-                text='Ux design'
-                onChange={() => setInfoData({ ...infoData, project: [...infoData.project, 'Ux design'] })}
-              />
-              <InputUpload
-                text='Ui design'
-                onChange={() => setInfoData({ ...infoData, project: [...infoData.project, 'Ui design'] })}
-              />
-              <InputUpload
-                text='Frontend dev'
-                onChange={() => setInfoData({ ...infoData, project: [...infoData.project, 'Frontend dev'] })}
-              />
-              <InputUpload
-                text='Branding & marketing'
-                onChange={() => setInfoData({ ...infoData, project: [...infoData.project, 'Branding & marketing'] })}
-              />
-              <InputUpload
-                text='Consulting & advisory'
-                onChange={() => setInfoData({ ...infoData, project: [...infoData.project, 'Consulting & advisory'] })}
-              />
+              <li>
+                <label>
+                  <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ux design')} />
+                  Ux design
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ui design')} />
+                  Ui design
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Frontend dev')} />
+                  Frontend dev
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Branding & marketing')} />
+                  Branding & marketing
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Consulting & advisory')} />
+                  Consulting & advisory
+                </label>
+              </li>
             </ul>
           </section>
           <div className='buttons-upload'>
