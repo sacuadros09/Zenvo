@@ -1,13 +1,36 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './Portfolio.css';
-import { InputPortfolio, FooterMobile, CardPortfolio } from "../../components/index";
-import { dataPortfolio } from '../../services/DataPortfolio';
+import { InputPortfolio, FooterMobile} from "../../components/index";
+import { db } from '../../firebase/firebase';
+import { collection,getDocs } from 'firebase/firestore';
+
 
 export function PortfolioPage() {
   const [searchValue, setSearchValue] = useState('');
   const [filterValue, setFilterValue] = useState('');
-  const [filteredData, setFilteredData] = useState(dataPortfolio);
+  const [filteredData, setFilteredData] = useState([]);
+  const [firebaseData, setFirebaseData] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const projectsCollection = collection(db, 'projects');
+        const projectsSnapshot = await getDocs(projectsCollection);
+        const projectsData = projectsSnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        console.log("Fetched Projects: ", projectsData);
+        setFirebaseData(projectsData);
+        setFilteredData(projectsData);
+      } catch (error) {
+        console.error("Error fetching projects: ", error);
+      }
+    };
+
+    fetchProjects();
+  }, []);
 
   const handleSearch = (event) => {
     const value = event.target.value;
@@ -22,12 +45,13 @@ export function PortfolioPage() {
   };
 
   const filterProjects = (search, filter) => {
-    const filteredByTitle = dataPortfolio.filter(project =>
+    const filteredByTitle = firebaseData.filter(project =>
       project.title.toLowerCase().includes(search.toLowerCase())
     );
 
-    const filteredProjects = filter ? filteredByTitle.filter(project => project.type === filter) : filteredByTitle;
+    const filteredProjects = filter ? filteredByTitle.filter(project => project.project.includes(filter)) : filteredByTitle;
 
+    console.log("Filtered Projects: ", filteredProjects);
     setFilteredData(filteredProjects);
   };
 
@@ -52,34 +76,45 @@ export function PortfolioPage() {
         </section>
 
         <section className='input-filter'>
-          <div >
-            <InputPortfolio className="input-portfolio" icon={<FiSearch />} text="Search project" onChange={handleSearch} /> 
+          <div>
+          <input
+      className="input-portfolio"
+      type="text"
+      placeholder="Search project"
+      onChange={handleSearch}
+      value={searchValue}
+    />
+    <FiSearch />
           </div>
           <div className="filter-container">
             <select className='filter-select' onChange={handleFilter} value={filterValue}>
               <option className='option-one' value="">All Projects</option>
-              <option value="UX Design">UX Design</option>
-              <option value="UI Design">UI Design</option>
-              <option value="Development">Development</option>
-              <option value="Consulting">Consulting</option>
-              <option value="Branding">Branding</option>
+              <option value="Ux design">Ux design</option>
+              <option value="Ui design">Ui design</option>
+              <option value="Frontend dev">Frontend dev</option>
+              <option value="Consulting & advisory">Consulting & advisory</option>
+              <option value="Branding & marketing">Branding & marketing</option>
             </select>
           </div>
         </section>
 
         <section className='component-portfolio'>
           {filteredData.map((card, id) => (
-            <CardPortfolio
-              title={card.title}
-              key={id}
-              img={card.img}
-              text={card.text}
-              name={card.name}
-              arrow={card.arrow}
-              icon1={card.icon1}
-              icon2={card.icon2}
-              icon3={card.icon3}
-            />
+            <article className='card-portfolio' key={id}>
+              <img src={card.images} className='img-card-port' alt={card.title} />
+              <div className='organice-desktop'>
+                <div className='all-text'>
+                  <div className='arrow-title'>
+                    <h3 className='title-portfolio-comp'>{card.title}</h3>
+                    <button className='arrow-btn'><img src={card.arrow} alt="Arrow" /></button>
+                  </div>
+                  <p className='descrip-portfolio'>{card.description}</p>
+                  <p className='made-for'>Realizado por {card.members.join(', ')}</p>
+                  <p className='project-types'>Tipos de proyecto: {card.project.join(', ')}</p>
+                  <a href={card.behance} className='behance-link' target='_blank' rel='noopener noreferrer'>Ver en Behance</a>
+                </div>
+              </div>
+            </article>
           ))}
         </section>
       </section>

@@ -10,7 +10,7 @@ export function UploadPage() {
   const [infoData, setInfoData] = useState({
     id: crypto.randomUUID(),
     title: '',
-    behance: '',
+    behance: '',  
     description: '',
     images: '',
     project: [],
