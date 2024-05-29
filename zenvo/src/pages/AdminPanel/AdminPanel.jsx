@@ -3,6 +3,7 @@ import { auth } from '../../firebase/firebase'
 import { Button3,FooterMobile } from '../../components/index'
 import { useState } from 'react'
 import { signInWithEmailAndPassword } from 'firebase/auth'
+import { useNavigate} from 'react-router-dom'
 
 
  export function AdminPanelPage () {
@@ -11,11 +12,14 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
   const [password,setPassword] = useState("")
   const [errorMessage,setErroMessage] = useState("")
 
+  const navigate = useNavigate();
+
   const signIn = (e) =>{
    e.preventDefault()
    signInWithEmailAndPassword(auth,email,password)
    .then((userCredential) => {
     console.log(userCredential)
+    navigate("/UploadPage")
    })
 
    .catch((error) => {

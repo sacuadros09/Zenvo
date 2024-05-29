@@ -5,6 +5,8 @@ import { collection,addDoc } from 'firebase/firestore'
 import { ref,uploadBytes, getDownloadURL} from 'firebase/storage'
 import { v4 as uuidv4  } from 'uuid'
 import { Button3} from '../../components/index'
+import { useNavigate} from 'react-router-dom'
+import { AuthDetails } from '../../AuthDetails/AuthDetails'
 
 export function UploadPage() {
   const [infoData, setInfoData] = useState({
@@ -18,6 +20,7 @@ export function UploadPage() {
   });
 
   const [imageUpload, setImageUpload] = useState(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,8 +51,19 @@ export function UploadPage() {
     try {
       await addDoc(collection(db, 'projects'), storageSaveData);
       console.log('Project added successfully');
+      navigate("/PortfolioPage")
     } catch (error) {
       console.error('Error adding project: ', error);
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      console.log('Sign out successful');
+      navigate('/'); // Redirige a la página de inicio de sesión después de cerrar sesión
+    } catch (error) {
+      console.error('Error signing out: ', error);
     }
   };
 
@@ -61,7 +75,6 @@ export function UploadPage() {
         <section className='container-upload'>
           <img className='banner-upload' src='../../src/assets/Logo1-zenvo.png' alt='Banner' />
           <h1 className='title-upload'>Upload new project</h1>
-
           <form className='form-upload'>
             <div className='divs-inputs-upload'>
               <label className='label1'>Title</label>
@@ -163,7 +176,7 @@ export function UploadPage() {
           </section>
           <div className='buttons-upload'>
             <button className='btn-upload' onClick={uploadImage}>Upload Project</button>
-            <button className='btn-logout'>Sign out</button>
+            <AuthDetails /> {/* Usa el componente AuthDetails */}
           </div>
         </section>
       </section>

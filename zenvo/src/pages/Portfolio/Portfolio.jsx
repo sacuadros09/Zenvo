@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './Portfolio.css';
-import { InputPortfolio, FooterMobile} from "../../components/index";
+import {FooterMobile} from "../../components/index";
 import { db } from '../../firebase/firebase';
 import { collection,getDocs } from 'firebase/firestore';
+
+
 
 
 export function PortfolioPage() {
