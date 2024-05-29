@@ -1,23 +1,26 @@
-.input-port{
-    border: 1px solid #5997f300;
-    background-color: rgba(133, 139, 227, 0);
+.input-port {
+    border: 1px solid transparent; /* Hacer el borde invisible */
+    background-color: transparent; /* Fondo transparente */
     border-radius: 8px;
     height: 34px;
-    margin-left: 9%;
-    outline: none;
+    outline: none; /* Elimina el borde del enfoque */
     margin-top: -1%;
+    width: 40vw;
+    color: #5997F3; /* Color del texto */
+    padding: 0 10px; /* Añadir padding para que el texto no esté pegado a los bordes */
 }
 
-.input-port::placeholder{
+.input-port::placeholder {
     color: #5997F3;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 15px;
     font-style: normal;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
+}
+
+.input-port:focus {
+    border: 1px solid transparent; /* Mantiene el borde invisible cuando se enfoca */
+    outline: none; /* Asegura que no haya borde de enfoque */
 }
 
 .div-input-port{
@@ -27,7 +30,7 @@ border: 1px solid #5997F3;
     background-color: rgb(133, 139, 227, 0.50);
     border-radius: 8px;
     height: 34px;
-    width: 72vw;
+    width: 40vw;
 }
 
 .search-img{
@@ -40,28 +43,29 @@ border: 1px solid #5997F3;
 
 @media (min-width: 768px){
 
-    .input-port{
-        border: 1px solid #5997f300;
-        background-color: rgba(133, 139, 227, 0);
+    .input-port {
+        border: 1px solid transparent; /* Hacer el borde invisible */
+        background-color: transparent; /* Fondo transparente */
         border-radius: 8px;
-        height: 41px;
-        margin-left: 6%;
-        outline: none;
-        margin-top: -1%;
+        height: 34px;
+        outline: none; /* Elimina el borde del enfoque */
+        margin-top: 1%;
+        width: 40vw;
+        color: #5997F3; /* Color del texto */
+        padding: 0 10px; /* Añadir padding para que el texto no esté pegado a los bordes */
     }
-
     
-    
-    .input-port::placeholder{
+    .input-port::placeholder {
         color: #5997F3;
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-size: 15px;
         font-style: normal;
-        display: flex;
-       justify-content: center;
-       align-items: center;
-       align-content: center;
+    }
+    
+    .input-port:focus {
+        border: 1px solid transparent; /* Mantiene el borde invisible cuando se enfoca */
+        outline: none; /* Asegura que no haya borde de enfoque */
     }
     
     .div-input-port{
@@ -70,8 +74,8 @@ border: 1px solid #5997F3;
     border: 1px solid #5997F3;
         background-color: rgb(133, 139, 227, 0.50);
         border-radius: 8px;
-        height: 34px;
-        width: 27vw;
+        height: 46px;
+        width: 25vw;
     }
     
   
@@ -88,4 +92,3 @@ border: 1px solid #5997F3;
     
 
 }
-
