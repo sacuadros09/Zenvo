@@ -4,6 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyDT3bw3JTwY_33tjnVAK28eclhZ76iD8Xg",
   authDomain: "zenvo-programwb.firebaseapp.com",
@@ -15,6 +16,8 @@ const firebaseConfig = {
 
   const app = initializeApp(firebaseConfig);
   
-    export const storage = getStorage(app)
+    export const storage = getStorage(app);
     export const db = getFirestore(app);
     export const auth = getAuth(app);
+
+
