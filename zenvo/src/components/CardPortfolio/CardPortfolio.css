@@ -3,6 +3,8 @@
     flex-direction: column;
     max-width: 345px;
     min-width: 345px;
+    min-height: 415px;
+    max-height: 415px;
     background-color: rgba(217, 217, 217, 0.05);
     border: 1px solid rgba(255, 242, 242, 0.08);
     border-radius: 15px;
