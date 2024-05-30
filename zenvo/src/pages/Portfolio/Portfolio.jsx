@@ -11,6 +11,7 @@ export function PortfolioPage() {
   const [filterValue, setFilterValue] = useState('');
   const [filteredData, setFilteredData] = useState([]);
   const [firebaseData, setFirebaseData] = useState([]);
+  const [projectCount, setProjectCount] = useState(0);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -24,6 +25,7 @@ export function PortfolioPage() {
         console.log("Fetched Projects: ", projectsData);
         setFirebaseData(projectsData);
         setFilteredData(projectsData);
+        setProjectCount(projectsData.length);
       } catch (error) {
         console.error("Error fetching projects: ", error);
       }
@@ -53,6 +55,7 @@ export function PortfolioPage() {
 
     console.log("Filtered Projects: ", filteredProjects);
     setFilteredData(filteredProjects);
+    setProjectCount(filteredProjects.length);
   };
 
   return (
@@ -97,6 +100,8 @@ export function PortfolioPage() {
         </section>
 
         <section className='component-portfolio'>
+        <p className="project-count-text">{projectCount} {projectCount === 1 ? 'project' : 'projects'} found</p>
+          {projectCount === 0}
           {filteredData.map((card, id) => (
             <article className='card-portfolio' key={id}>
               <img src={card.images} className='img-card-port' alt={card.title} />

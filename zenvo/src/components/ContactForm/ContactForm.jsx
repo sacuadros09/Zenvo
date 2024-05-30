@@ -48,7 +48,9 @@ export const ContactForm = ({ formData, handleChange, handleSubmit }) => {
         />
       </div>
       
+      <div className='space-button-submit'>
       <button type="submit" className="submit-button">Send</button>
+      </div>
     </form>
   );
 };

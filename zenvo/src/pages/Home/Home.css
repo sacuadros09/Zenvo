@@ -15,6 +15,14 @@
     max-width: 70%;
 }
 
+.decoration-service1-1-ourservice{
+    display: none;
+}
+
+.decoration-service2-1-ourservice{
+    display: none;
+}
+
 .home-title{
     font-size: 200%;
     color: #98DFFD;
@@ -87,6 +95,23 @@
 }
 
 @media (min-width:768px){
+
+    .decoration-service1-1-ourservice{
+        display: block;
+        width: 8vw;
+        position: absolute;
+        top: 150px;
+        left: 0;
+    }
+    
+    .decoration-service2-1-ourservice{
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 200px;
+        right: 0;
+    }
+
     .home-title{
         font-size: 400%;
         margin-bottom: 2%;

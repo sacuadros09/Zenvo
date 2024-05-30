@@ -52,4 +52,20 @@
   color: #ffffff; 
 }
 
+@media (min-width:768px){
+    .contact-form .form-group label {
+        font-size: 27px;
+      }
+
+      .space-button-submit {
+        align-items: center;
+      }
+
+      .contact-form button {
+        font-size: 25px;
+        width: 50%;
+        height: 80px;
+      }
+        
+}
   

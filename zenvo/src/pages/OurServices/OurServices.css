@@ -10,6 +10,7 @@
 }
 .who-we-celphone{
     display: flex;
+    margin-top: 10%;
 }
 
 
@@ -73,14 +74,19 @@
 
     .who-we-are{
         display: flex;
-        margin-bottom: 100px;
+        margin-top: 8%;
+        margin-bottom: 5%;
+        padding-left: 5%;
     }
 
     
 .transform{
     display: flex;
     background-color: #5997F3;
+    width: 90%;
     margin-bottom: 80px;
+    border-radius: 50px;
+    margin-left: 5%;
 }
 
 .transform-letter{
@@ -124,14 +130,14 @@
     display: block;
     width: 10vw;
     position: absolute;
-    top: 754px;
+    top: 1100px;
 }
 
 .decoration-service2-ourservice{
     display: block;
     width: 10vw;
     position: absolute;
-    top: 1228px;
+    top: 2228px;
     right: -5px;
 }
 
@@ -139,7 +145,7 @@
     display: block;
     width: 10vw;
     position: absolute;
-    top: 1790px;
+    top: 2590px;
 }
 
 
