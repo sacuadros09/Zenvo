@@ -8,28 +8,34 @@ import { Button } from "../../components"
   export function DevServicePage () {
     return (
      <>
-       <section>
-         <div>
-        <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../src/assets/three_line_icon.png"></img></button>
-        <Button text='Contact us' />
+      <section>
+        
+        <div>
+       <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../src/assets/three_line_icon.png"></img></button>
+       <Button text='Contact us' />
+       </div>
+       <h1 className='title-dev'>FrontEnd Development</h1>
+        <img  className='banner-img' src="../../src/assets/banner-dev.png"/>
+        
+        <img  className='sec-banner-img' src="../../src/assets/dev-img-mobile.png"/>
+
+        <section className='sec-midpage'>
+        
+        <div className='components-sec'>
+        {CardsDev.map((card, id) => (
+
+          <InfoCard title={card.title} key={id}
+          img={card.img} text={card.description}/>
+
+        ))}
+         </div>
+        <div className='web-ux-img-container'>
+        <img className='web-ux-img' src="../../src/assets/dev-img-web.png"/>
         </div>
-        <h1 className='title-dev'>UX Design Services</h1>
-         <img  className='banner-img' src="../../src/assets/Pic_mobile_uxservice.png"/>
-         
-         <img  className='sec-banner-img' src="../../src/assets/Ux-sec-banner.png"/>
-         <div className='components-sec'>
-         {CardsDev.map((card, id) => (
- 
-           <InfoCard title={card.title} key={id}
-           img={card.img} text={card.text}/>
- 
-         ))}
-         
-        </div>
-        </section>
-         <p>queda faltando el footer</p>
-      
+       </section>
+       <img className="decoration-devservice" src="../../../src/assets/circle-line-service2.png"/>
+       </section>
        
      </>
    )
- } 
+ }

@@ -1,0 +1,57 @@
+.btn-logout-auth{
+border: 2px solid #FF51F8;
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 35%;
+}
+
+.text-auth{
+    color: white;
+    text-decoration: underline;
+}
+
+.container-auth{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 2%;
+}
+
+@media (min-width: 768px){
+
+    .btn-logout-auth{
+        border: 2px solid #FF51F8;
+          border-radius: 5px;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          margin-top: 3%;
+          display: flex;
+          justify-content: center;
+          width: 45%;
+        }
+        
+        .text-auth{
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .container-auth{
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            flex-direction: column;
+            gap: 8px;
+           
+        }
+
+}

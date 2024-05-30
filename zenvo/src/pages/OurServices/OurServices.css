@@ -17,6 +17,18 @@
     display: none;
 }
 
+.transform-letter {
+    display: flex;            
+    justify-content: center;  
+    align-items: center;      
+    width: 100vw;             
+    height: 100vh;            
+    text-align: center;       
+    margin: 0;                
+    padding: 0;               
+}
+
+
 .ourservices-button{
     display: flex; 
     justify-content: flex-end;
@@ -25,15 +37,34 @@
     margin-bottom: 50px;    
 }
 
-.services-card {
-    background-color: rgba(217, 217, 217, 0.1);
-    border-radius: 10px;
-    width: 380px;
-    margin-left: 3px;
+.services-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 4%;
 }
 
+.services-card{
+    background-color: #fff2f20a;
+  border-radius: 10px;
+}
 
-    
+.btn-seemore{
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+.decoration-service1-ourservice{
+    display: none;
+}
+
+.decoration-service2-ourservice{
+    display: none;
+}
+
+.decoration-service3-ourservice{
+    display: none;
+}
 
 @media (min-width:768px){
     .who-we-celphone{
@@ -64,16 +95,53 @@
 
 }
 
-.services-card{
-    background-color: rgba(217, 217, 217, 0.0);
-    width: 775px; 
-    height: 423px;
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    /* Asegura que el contenedor ocupe todo el ancho disponible */
 }
 
-.cardservices-ourservices{
-   display: flex;
-   flex-direction: row;
+.services-card {
+    background-color: #fff2f20f;;
+    width: 53%; /* Ajusta el ancho de la tarjeta para que ocupe más espacio horizontal */
+    max-width: 1200px; /* Define un ancho máximo para pantallas grandes */
+    /* Permite que la altura se ajuste automáticamente */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    display: flex;
+    align-items: center;
+   
 }
+
+
+.btn-seemore{
+    display: flex;
+    margin-top: 15%;
+}
+
+.decoration-service1-ourservice{
+    display: block;
+    width: 10vw;
+    position: absolute;
+    top: 754px;
+}
+
+.decoration-service2-ourservice{
+    display: block;
+    width: 10vw;
+    position: absolute;
+    top: 1228px;
+    right: -5px;
+}
+
+.decoration-service3-ourservice{
+    display: block;
+    width: 10vw;
+    position: absolute;
+    top: 1790px;
+}
+
 
 
    

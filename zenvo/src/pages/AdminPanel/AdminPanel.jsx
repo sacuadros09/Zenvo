@@ -3,7 +3,8 @@ import { auth } from '../../firebase/firebase'
 import { Button3,FooterMobile } from '../../components/index'
 import { useState } from 'react'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { Link } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
+
 
  export function AdminPanelPage () {
 
@@ -11,11 +12,14 @@ import { Link } from 'react-router-dom'
   const [password,setPassword] = useState("")
   const [errorMessage,setErroMessage] = useState("")
 
+  const navigate = useNavigate();
+
   const signIn = (e) =>{
    e.preventDefault()
    signInWithEmailAndPassword(auth,email,password)
    .then((userCredential) => {
     console.log(userCredential)
+    navigate("/UploadPage")
    })
 
    .catch((error) => {
@@ -58,11 +62,12 @@ import { Link } from 'react-router-dom'
                     <button className='btn-login' type='submit'>Log in</button>
                   
                 </form>
-                {errorMessage && <p>{errorMessage}</p>}
+                {errorMessage && <p className='error-message'>{errorMessage}</p>}
             </div>
         </section>
+        <img className="decoration-service-admin1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-service-admin2" src="../../../src/assets/circle-line-service2.png"/>
       </section>
-      <FooterMobile />
     </>
   );
 }

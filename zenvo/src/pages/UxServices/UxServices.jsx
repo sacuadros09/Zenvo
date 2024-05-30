@@ -1,6 +1,6 @@
 import './UxServices.css' 
 
-import { Button,InfoCard,FooterMobile  } from "../../components/index"
+import { Button,InfoCard  } from "../../components/index"
 import CardsUx from '../../services/dataServiceUx'
 
 
@@ -19,6 +19,9 @@ import CardsUx from '../../services/dataServiceUx'
         <img  className='banner-img' src="../../src/assets/Pic_mobile_uxservice.png"/>
         
         <img  className='sec-banner-img' src="../../src/assets/Ux-sec-banner.png"/>
+
+        <section className='sec-midpage'>
+        
         <div className='components-sec'>
         {CardsUx.map((card, id) => (
 
@@ -26,12 +29,16 @@ import CardsUx from '../../services/dataServiceUx'
           img={card.img} text={card.text}/>
 
         ))}
-        
-       </div>
+         </div>
+        <div className='web-ux-img-container'>
+        <img className='web-ux-img' src="../../src/assets/ux-service-imgWeb.png"/>
+        </div>
        </section>
-       <FooterMobile />
+       <img className="decoration-uxservice" src="../../../src/assets/circle-line-service2.png"/>
+       </section>
+       
      
       
     </>
   )
-} 
+}
