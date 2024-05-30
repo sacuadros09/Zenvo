@@ -4,7 +4,6 @@ import { SocialMediaButton, CardPortfolio } from "../../components/index";
 import behanceImg from '../../assets/behance.png';
 import gitHubImg from '../../assets/github.png';
 import { collection, getDocs, query, where } from "firebase/firestore";
-
 import { db } from "../../firebase/firebase";
 
 export function JD() {
@@ -60,6 +59,7 @@ export function JD() {
                     <img className="img-div" src="/src/assets/avila-color.png" />
                 </div>
             </div>
+            <h5 className="profile-name"><strong>Projects</strong></h5>
             <div className="my-projects-section">
                 {projectsData.map(({ id, images, description, title, behance, members }) => (
                     <CardPortfolio key={id} variant='profile-projects' img={images} text={description} title={title} link={behance} name={members.join(', ')} />

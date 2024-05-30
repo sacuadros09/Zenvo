@@ -22,3 +22,21 @@
     min-width: 200px;
     border-radius: 0 0 15px 15px;
 }
+
+@media (min-width:768px){
+
+    .section-img img{
+        max-height: 300px;
+        min-height: 300px;
+    }
+
+    .section-img{
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .section-img p{
+        min-width: 300px;
+    }
+}

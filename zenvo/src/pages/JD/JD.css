@@ -1,15 +1,14 @@
 .body{
-    margin-bottom: 50px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-title{
     font-size: 25px;
     color: #98DFFD;
-}
-
-.all-info-profile{
-    display: flex;
-    flex-direction: column-reverse;
 }
 
 .img-div{
@@ -46,6 +45,22 @@
     margin-bottom: 20px;
 }
 
+.all-info-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-projects-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    max-width: 350px;
+    gap: 20px;
+
+}
+
 @media (min-width:768px){
     .all-info-profile{
         display: flex;
@@ -56,5 +71,12 @@
     }
     .info{
         max-width: 500px;
+    }
+
+    .my-projects-section{
+        max-width: 860px;
+        min-width: 860px;
+        margin: 0 auto;
+        justify-content: center;
     }
 }

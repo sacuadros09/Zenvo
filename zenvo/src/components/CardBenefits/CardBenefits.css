@@ -1,0 +1,50 @@
+.card-benefits{
+    background-color: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 242, 242, 0.08);
+    border-radius: 15px;
+    padding: 5% 5%;
+    margin-bottom: 5%;
+    align-items: left;
+}
+
+.card-benefits h1{
+    color: #858BE3;
+    font-size: 120%;
+}
+
+.card-benefits p{
+    color: #ffffff;
+    font-size: 100%;
+}
+.card-benefits img{
+    display: none;    
+}
+
+@media (min-width:768px){
+    .card-benefits{
+        background-color: #858be380;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        max-width: 350px;
+        min-height: 400px;
+    }
+
+    .card-benefits h1{
+        color: #ffffff;
+        font-size: 120%;
+    }
+    
+    .card-benefits p{
+        color: #ffffff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card-benefits img{
+        display: flex;    
+    }
+
+}

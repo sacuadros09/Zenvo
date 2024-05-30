@@ -17,23 +17,18 @@ return(
         })}
     </div>
   <div className="about-purpose">
-  <h1 className="purpose-about">What is our purpose?</h1>
+    <h1 className="purpose-about">What is our purpose?</h1>
     <div className="our-purpose">
-       <img className="map-about" src="/src/assets/purpose-img.png"></img>
-       <div className="about-infocard">
-       <InfoCard variant ="card-transforming" title="Transforming the digital experience:" text="Our purpose is to revolutionize the way people interact with technology by offering innovative and creative design solutions"></InfoCard>
-       <InfoCard variant ="card-impact" title="Make a positive impact:" text="We seek to improve the lives of our clients and their audience by creating meaningful and memorable digital experiences."></InfoCard>
-       </div>
+        <img className="map-about" src="/src/assets/purpose-img.png"></img>
+        <div className="about-infocard">
+            <InfoCard variant ="card-transforming" title="Transforming the digital experience:" text="Our purpose is to revolutionize the way people interact with technology by offering innovative and creative design solutions"></InfoCard>
+            <InfoCard variant ="card-impact" title="Make a positive impact:" text="We seek to improve the lives of our clients and their audience by creating meaningful and memorable digital experiences."></InfoCard>
+        </div>
     </div>
-
+    <div/>
     <div className="mission-vision">
-        <div className="mission">
-
-    <CardOurServices  variant ="about-mission" title="Mission" description="Our mission at Zenvo Studio is to exceed client expectations by transforming ideas into captivating visual experiences. With expertise in UX/UI and frontend, we merge functionality with creativity, leaving a lasting mark through exceptional design." img="/src/assets/Mission.png"></CardOurServices>
-    </div>
-    <div className="vision">
-    <CardOurServices  variant ="about-vision" title="Vision" description="At Zenvo Studio, our vision is to lead the creation of innovative visual solutions that set trends in the design industry. We aim to build strong relationships with clients, elevating design quality and aesthetics in every challenge. As a benchmark for inspiring visual experiences, we contribute to the success of brands in the digital world." img="/src/assets/Vission.png"></CardOurServices>
-    </div>
+            <CardOurServices  variant ="about-mission" title="Mission" description="Our mission at Zenvo Studio is to exceed client expectations by transforming ideas into captivating visual experiences. With expertise in UX/UI and frontend, we merge functionality with creativity, leaving a lasting mark through exceptional design." img="/src/assets/Mission.png"/>
+            <CardOurServices  variant ="about-vision" title="Vision" description="At Zenvo Studio, our vision is to lead the creation of innovative visual solutions that set trends in the design industry. We aim to build strong relationships with clients, elevating design quality and aesthetics in every challenge. As a benchmark for inspiring visual experiences, we contribute to the success of brands in the digital world." img="/src/assets/Vission.png"/>
     </div>
     </div>
 
@@ -41,13 +36,13 @@ return(
         <h1 className="title-benefits">3 benefits of working with us</h1>
         <div className="cards-benefits">
             <div className="creative">
-                <CardBenefits variant ="about-creative" img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+                <CardBenefits img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."/>
             </div>
             <div className="client">
-                <CardBenefits  variant ="about-client" img="/src/assets/Pencil.png" title="Client-centric approach" description="We value our clients' needs and objectives, collaborating closely with them to ensure that each project is customized and meets their expectations."></CardBenefits>
+                <CardBenefits img="/src/assets/Perfil.png" title="Client-centric approach" description="We value our clients' needs and objectives, collaborating closely with them to ensure that each project is customized and meets their expectations."/>
             </div>
             <div className="results">
-                <CardBenefits variant ="about-results" img="/src/assets/Pencil.png" title="Exceptional results" description="We are committed to delivering high-quality results on every project, using our experience and skills to exceed expectations and generate lasting impact."></CardBenefits>
+                <CardBenefits img="/src/assets/Check-icon.png" title="Exceptional results" description="We are committed to delivering high-quality results on every project, using our experience and skills to exceed expectations and generate lasting impact."/>
             </div>
         </div>
         

@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
+.about-mission{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-mission h1{
+    color: #98DFFD;
+    font-size: 25px;
+}
+
+.about-mission p{
+    color: white;
+}
+
+.about-vision{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-vision h1{
+    color: #98DFFD;
+    font-size: 25px;
+}
+
+.about-vision p{
+    color: white;
+}
+
 .cardservices-ourservices img {
     width: 386px; 
     height: 237px;
@@ -129,6 +160,22 @@
     margin-top: 2%;
     font-family: 'Poppins', sans-serif;
    
+}
+
+.about-mission{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-vision{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.text-container{
+    width: 500px;
 }
     
 

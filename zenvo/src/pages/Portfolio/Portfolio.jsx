@@ -11,6 +11,7 @@ export function PortfolioPage() {
   const [filterValue, setFilterValue] = useState('');
   const [filteredData, setFilteredData] = useState([]);
   const [firebaseData, setFirebaseData] = useState([]);
+  const [projectCount, setProjectCount] = useState(0);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -24,6 +25,7 @@ export function PortfolioPage() {
         console.log("Fetched Projects: ", projectsData);
         setFirebaseData(projectsData);
         setFilteredData(projectsData);
+        setProjectCount(projectsData.length);
       } catch (error) {
         console.error("Error fetching projects: ", error);
       }
@@ -53,6 +55,7 @@ export function PortfolioPage() {
 
     console.log("Filtered Projects: ", filteredProjects);
     setFilteredData(filteredProjects);
+    setProjectCount(filteredProjects.length);
   };
 
   return (
@@ -97,6 +100,8 @@ export function PortfolioPage() {
         </section>
 
         <section className='component-portfolio'>
+        <p className="project-count-text">{projectCount} {projectCount === 1 ? 'project' : 'projects'} found</p>
+          {projectCount === 0}
           {filteredData.map((card, id) => (
             <article className='card-portfolio' key={id}>
               <img src={card.images} className='img-card-port' alt={card.title} />
@@ -104,6 +109,7 @@ export function PortfolioPage() {
                 <div className='all-text'>
                   <div className='arrow-title'>
                     <h3 className='title-portfolio-comp'>{card.title}</h3>
+                    <button className='arrow-btn'><img src={card.arrow}  /></button>
                   </div>
                   <p className='descrip-portfolio'>{card.description}</p>
                   <p className='made-for'>Realizado por {card.members.join(', ')}</p>
@@ -114,9 +120,10 @@ export function PortfolioPage() {
             </article>
           ))}
         </section>
-      
+        <img className="decoration-portfolio1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-portfolio2" src="../../../src/assets/circle-line-service2.png"/>
        
       </section>
-    </>
-  );
+</>
+);
 }

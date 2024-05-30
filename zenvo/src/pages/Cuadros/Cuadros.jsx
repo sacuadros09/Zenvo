@@ -56,14 +56,16 @@ return(
             </div>
             <div>
                 <img className="img-div" src="/src/assets/cuadros-color.png"/>
+                
             </div>
-            <div className="my-projects-section">
-                {projectsData.map(({ id, images, description, title, behance, members }) => (
-                    <CardPortfolio key={id} variant='profile-projects' img={images} text={description} title={title} link={behance} name={members.join(', ')} />
-                ))}
-            </div>
+            
         </div>
-
+        <h5 className="profile-name"><strong>Projects</strong></h5>
+        <div className="my-projects-section">
+            {projectsData.map(({ id, images, description, title, behance, members }) => (
+                <CardPortfolio key={id} variant='profile-projects' img={images} text={description} title={title} link={behance} name={members.join(', ')} />
+            ))}
+        </div>
     </div>
 )
 }

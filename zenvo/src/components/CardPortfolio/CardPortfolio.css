@@ -1,17 +1,53 @@
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 345px;
+    min-width: 345px;
+    background-color: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 242, 242, 0.08);
+    border-radius: 15px;
+}
+
+.img-card-portfolio{
+    max-height: 230px;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+}
+
+.text-card-portfolio{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-card-portfolio{
+    color: #98DFFD;
+    font-size: 30px;
+}
+
+.description-card-portfolio{
+    display: none;
+}
+
+.card-made-for{
+    color: white;
+}
+
 .card-portfolio {
     width: 90%;
     margin-left: 5%;
 }
 .title-portfolio-comp{
     font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        font-size: 25px;
-        font-style: normal;
-        margin-bottom: 5%;
-        color: #98DFFD;
-        text-shadow: 1px 1px 1px #00000091;
-        justify-content: center;
-        display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    font-style: normal;
+    margin-bottom: 5%;
+    color: #98DFFD;
+    text-shadow: 1px 1px 1px #00000091;
+    justify-content: center;
+    display: flex;
 }
 
 .arrow-title{

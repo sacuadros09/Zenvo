@@ -6,7 +6,7 @@ export function CardOurServices (props) {
       <div className={`${variant} ${reverse ? 'reverse' : ''}`}>
         <img src={img} />
         <div className="text-container">
-        <h1> {title} </h1>
+        <h1> <strong>{title}</strong> </h1>
         <p>{description}</p>
         </div>
       </div>
