@@ -34,6 +34,7 @@ import CardsUx from '../../services/dataServiceUx'
         <img className='web-ux-img' src="../../src/assets/ux-service-imgWeb.png"/>
         </div>
        </section>
+       <img className="decoration-uxservice" src="../../../src/assets/circle-line-service2.png"/>
        </section>
        
      

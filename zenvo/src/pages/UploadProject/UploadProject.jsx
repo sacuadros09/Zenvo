@@ -57,16 +57,6 @@ export function UploadPage() {
     }
   };
 
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      console.log('Sign out successful');
-      navigate('/'); // Redirige a la página de inicio de sesión después de cerrar sesión
-    } catch (error) {
-      console.error('Error signing out: ', error);
-    }
-  };
-
   return (
     <>
       <section>
@@ -78,35 +68,33 @@ export function UploadPage() {
           <form className='form-upload'>
             <div className='divs-inputs-upload'>
               <label className='label1'>Title</label>
-              <input className='input-proyects'
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Title"
                 name="title"
                 onChange={handleChange}
               />
-              <label>Project link</label>
-              <input className='input-proyects'
+              <label className='label1'>Project link</label>
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Url Behance"
                 name="behance"
                 onChange={handleChange}
               />
-              <label>Description</label>
-              <input className='input-proyects'
+              <label className='label1'>Description</label>
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Description of the project"
                 name="description"
                 onChange={handleChange}
               />
               <div className='custom-input-file'>
-                <label>Image</label>
-                <input className='input-proyects'
-                  type="file"
-                  onChange={(event) => {
-                    setImageUpload(event.target.files[0]);
-                  }}
-                />
+              <label className="custom-file-label">Image</label>
+              <input className='input-proyects-upload' type="file" onChange={(event) => { setImageUpload(event.target.files[0]); }} />
               </div>
+
+
+              
             </div>
           </form>
 
@@ -115,25 +103,25 @@ export function UploadPage() {
               <h4 className='subtitle-upload'>Project members</h4>
               <ul className='list-check1'>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Katherine Reyes')} />
                     Katherine Reyes
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Sebastián Gonzalez')} />
                     Sebastián Gonzalez
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Juan David Avila')} />
                     Juan David Avila
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Santiago Cuadros')} />
                     Santiago Cuadros
                   </label>
@@ -143,31 +131,31 @@ export function UploadPage() {
             <h4 className='secsubtitle-upload'>Type of project</h4>
             <ul className='list-check2'>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ux design')} />
                   Ux design
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ui design')} />
                   Ui design
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Frontend dev')} />
                   Frontend dev
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Branding & marketing')} />
                   Branding & marketing
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Consulting & advisory')} />
                   Consulting & advisory
                 </label>
@@ -176,9 +164,11 @@ export function UploadPage() {
           </section>
           <div className='buttons-upload'>
             <button className='btn-upload' onClick={uploadImage}>Upload Project</button>
-            <AuthDetails /> {/* Usa el componente AuthDetails */}
           </div>
+          <AuthDetails /> {/* Usa el componente AuthDetails */}
         </section>
+        <img className="decoration-upload1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-upload2" src="../../../src/assets/circle-line-service2.png"/>
       </section>
     </>
   );

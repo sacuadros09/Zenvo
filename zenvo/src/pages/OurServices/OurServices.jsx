@@ -28,9 +28,9 @@ export function OurServices () {
         })}
     
         </div>
-        <img className="decoration-service1" src="../../../src/assets/circle-line-service.png"/>
-        <img className="decoration-service2" src="../../../src/assets/circle-line-service2.png"/>
-        <img className="decoration-service3" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-service1-ourservice" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-service2-ourservice" src="../../../src/assets/circle-line-service2.png"/>
+        <img className="decoration-service3-ourservice" src="../../../src/assets/circle-line-service.png"/>
         </div>  
     
     

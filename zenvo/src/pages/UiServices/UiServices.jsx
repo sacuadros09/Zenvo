@@ -33,6 +33,7 @@ import CardsUi from '../../services/dataServiceUi'
         <img className='web-ux-img' src="../../src/assets/img-web-uiservice.png"/>
         </div>
        </section>
+       <img className="decoration-uiservice" src="../../../src/assets/circle-line-service2.png"/>
        </section>
        
      

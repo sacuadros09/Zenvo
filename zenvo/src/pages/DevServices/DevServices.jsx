@@ -33,6 +33,7 @@ import { Button } from "../../components"
         <img className='web-ux-img' src="../../src/assets/dev-img-web.png"/>
         </div>
        </section>
+       <img className="decoration-devservice" src="../../../src/assets/circle-line-service2.png"/>
        </section>
        
      </>

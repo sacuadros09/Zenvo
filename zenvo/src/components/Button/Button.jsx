@@ -2,15 +2,15 @@ import './Button.css'
 import { Link } from "react-router-dom";
 
 export function Button(props) {
-    const {text,variant,path} = props
+    const {text,url} = props
 
     return (
-        <div className={variant}>
-        <Link to={path}>
-            <button className="contactus-button">
-                <p>{text}</p> 
-            </button>
-        </Link>
+        <div className="button-container">
+            <Link to={url} className="contactus-link">
+                <button className="contactus-button">
+                    <p>{text}</p> 
+                </button>
+            </Link>
         </div>
-    )
+    );
 }

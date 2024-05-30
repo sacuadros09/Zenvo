@@ -2,6 +2,8 @@ import { useState } from 'react';
 import "./FooterMobile.css";
 import { FaFacebook, FaTwitter, FaInstagram, FaChevronDown } from 'react-icons/fa'; // Importa el icono de la flecha hacia abajo
 import logo from '../../assets/Logo1-zenvo.png';
+import { Link } from "react-router-dom";
+
 
  export function FooterMobile() {
     const [companyInfoVisible, setCompanyInfoVisible] = useState(false);
@@ -27,7 +29,11 @@ import logo from '../../assets/Logo1-zenvo.png';
                         <li>About us</li>
                         <li>Contact us</li>
                         <li>FAQ</li>
-                        <button className="admin-panel-button">Administrator Panel</button>
+                        <Link to='/AdminPanelPage'>
+                        <button className="admin-panel-button">
+                         Administrator Panel
+                        </button>
+                        </Link>
                     </ul>
                 )}
             </div>
@@ -65,7 +71,6 @@ import logo from '../../assets/Logo1-zenvo.png';
             <div className="footer-copyright">
                 <p><span>&copy;</span> Copyright 2024 - Zenvo Studio</p>
             </div>
-
         </footer>
     );
 }

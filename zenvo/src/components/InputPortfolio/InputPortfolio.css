@@ -6,7 +6,7 @@
     outline: none; /* Elimina el borde del enfoque */
     margin-top: -1%;
     width: 40vw;
-    color: #5997F3; /* Color del texto */
+    color: white; /* Color del texto */
     padding: 0 10px; /* Añadir padding para que el texto no esté pegado a los bordes */
 }
 
@@ -51,7 +51,7 @@ border: 1px solid #5997F3;
         outline: none; /* Elimina el borde del enfoque */
         margin-top: 1%;
         width: 40vw;
-        color: #5997F3; /* Color del texto */
+        color: white; /* Color del texto */
         padding: 0 10px; /* Añadir padding para que el texto no esté pegado a los bordes */
     }
     
