@@ -78,21 +78,21 @@ export function UploadPage() {
           <form className='form-upload'>
             <div className='divs-inputs-upload'>
               <label className='label1'>Title</label>
-              <input className='input-proyects'
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Title"
                 name="title"
                 onChange={handleChange}
               />
               <label className='label1'>Project link</label>
-              <input className='input-proyects'
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Url Behance"
                 name="behance"
                 onChange={handleChange}
               />
               <label className='label1'>Description</label>
-              <input className='input-proyects'
+              <input className='input-proyects-upload'
                 type='text'
                 placeholder="Description of the project"
                 name="description"
@@ -100,7 +100,7 @@ export function UploadPage() {
               />
               <div className='custom-input-file'>
               <label className="custom-file-label">Image</label>
-              <input className='input-proyects' type="file" onChange={(event) => { setImageUpload(event.target.files[0]); }} />
+              <input className='input-proyects-upload' type="file" onChange={(event) => { setImageUpload(event.target.files[0]); }} />
               </div>
 
 
