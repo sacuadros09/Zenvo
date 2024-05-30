@@ -25,7 +25,7 @@ return (
         <section>
             {!showMenu ? null : <MobileNavbar/>}
         </section>
-        <Button text= "Contact Us"/>
+        <Button text= "Contact Us" url="/ContactPage"/>
         
     </nav>
 )

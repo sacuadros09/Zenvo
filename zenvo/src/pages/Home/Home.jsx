@@ -23,7 +23,7 @@ return(
                 </div>
             </div>
             <div className="blue-card">
-                <p>&quot;Inspiring <strong>digital evolution</strong> through visionary design, driven by the <strong>collaborative synergy</strong> of our four creative minds.&quot;</p>
+                <h2 className="blue-card-text"> Inspiring digital evolution through visionary design, driven by the collaborative synergy of our four creative minds</h2>
             </div>
         </section>
         <section className="ourteam-section">
