@@ -57,16 +57,6 @@ export function UploadPage() {
     }
   };
 
-  const handleLogout = async () => {
-    try {
-      await signOut(auth);
-      console.log('Sign out successful');
-      navigate('/'); // Redirige a la página de inicio de sesión después de cerrar sesión
-    } catch (error) {
-      console.error('Error signing out: ', error);
-    }
-  };
-
   return (
     <>
       <section>

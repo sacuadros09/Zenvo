@@ -23,14 +23,14 @@ return(
                 </div>
             </div>
             <div className="blue-card">
-                <h2 className="blue-card-text"> Inspiring digital evolution through visionary design, driven by the collaborative synergy of our four creative minds</h2>
+                <p>&quot;Inspiring <strong>digital evolution</strong> through visionary design, driven by the <strong>collaborative synergy</strong> of our four creative minds.&quot;</p>
             </div>
         </section>
         <section className="ourteam-section">
                 <h1 className="home-title"><strong>Our Team</strong></h1>
                 <div className="profile-cards">
-                    {dataAbout.map(({id, name, talents, img2, behance, github, link}) => (
-                        <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} gitHub={github} link={link}/>
+                    {dataAbout.map(({id, name, talents, img2, behance, github, path}) => (
+                        <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} gitHub={github} link={path}/>
                     ))}
                 </div>
         </section>
@@ -50,10 +50,9 @@ return(
                 ))}
             </div>
         </section>
-        <section className="proyects-section">
+        <section className="projects-section">
             
         </section>
     </div>
 )
 }
-  
