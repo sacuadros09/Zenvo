@@ -54,15 +54,15 @@
     margin-bottom: 5%;
 }
 
-.decoration-service1{
+.decoration-service1-ourservice{
     display: none;
 }
 
-.decoration-service2{
+.decoration-service2-ourservice{
     display: none;
 }
 
-.decoration-service3{
+.decoration-service3-ourservice{
     display: none;
 }
 
@@ -120,24 +120,24 @@
     margin-top: 15%;
 }
 
-.decoration-service1{
+.decoration-service1-ourservice{
     display: block;
-    width: 12vw;
+    width: 10vw;
     position: absolute;
     top: 754px;
 }
 
-.decoration-service2{
+.decoration-service2-ourservice{
     display: block;
-    width: 12vw;
+    width: 10vw;
     position: absolute;
     top: 1228px;
     right: -5px;
 }
 
-.decoration-service3{
+.decoration-service3-ourservice{
     display: block;
-    width: 12vw;
+    width: 10vw;
     position: absolute;
     top: 1790px;
 }

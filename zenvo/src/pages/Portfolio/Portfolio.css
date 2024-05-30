@@ -172,6 +172,18 @@
     width: 26%;
 }
 
+.decoration-service1{
+    display: none;
+}
+
+.decoration-service2{
+    display: none;
+}
+
+.decoration-service3{
+    display: none;
+}
+
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 768px) {
     /* Estilos para el texto del título del portafolio */
@@ -249,7 +261,7 @@
         width: 68%;
         margin-left: 16%;
         flex-direction: column;
-        gap: 0px;
+        gap: 30px;
     }
 
     .input-filter {
@@ -307,11 +319,37 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
-        margin-top: 10%;
+        margin-top: 2%;
         display: flex;
         justify-content: center;
         width: 26%;
     }
+
+    .decoration-portfolio1{
+        display: block;
+        width: 12vw;
+        position: absolute;
+        top: 754px;
+        z-index: 10;
+    }
+    
+    .decoration-portfolio2{
+        display: block;
+        width: 12vw;
+        position: absolute;
+        top: 1228px;
+        right: -1px;
+        z-index: 10;
+    }
+    
+    .project-types{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        margin-top: -2.5%;
+    }
+   
 
 
 }

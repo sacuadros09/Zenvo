@@ -33,6 +33,7 @@ import CardsBrand from '../../services/dataServiceBrand'
         <img className='web-ux-img' src="../../src/assets/img-web-brand.png"/>
         </div>
        </section>
+       <img className="decoration-brandservices" src="../../../src/assets/circle-line-service2.png"/>
        </section>
        
      </>

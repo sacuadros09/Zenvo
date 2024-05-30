@@ -51,6 +51,10 @@
     display: none;
 }
 
+.decoration-devservice{
+   display: none;
+}
+
 @media (min-width:768px){
     .title-dev{
         font-family: "Poppins", sans-serif;
@@ -127,6 +131,14 @@
         margin-bottom: 3%;
         margin-top: 3%;
         
+    }
+
+    .decoration-devservice{
+        display: block;
+        width: 9vw;
+        position: absolute;
+        top: 310px;
+        right: 2px;
     }
 
 

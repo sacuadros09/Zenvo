@@ -62,9 +62,11 @@ import { useNavigate} from 'react-router-dom'
                     <button className='btn-login' type='submit'>Log in</button>
                   
                 </form>
-                {errorMessage && <p>{errorMessage}</p>}
+                {errorMessage && <p className='error-message'>{errorMessage}</p>}
             </div>
         </section>
+        <img className="decoration-service-admin1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-service-admin2" src="../../../src/assets/circle-line-service2.png"/>
       </section>
     </>
   );

@@ -43,6 +43,7 @@
     outline: none;
     margin-bottom: 15px; /* Añade margen inferior a cada input */
     padding: 0 10px; /* Añade padding interno para separar el placeholder */
+    color: white;
 }
 
 
@@ -83,6 +84,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.decoration-service-admin1{
+    display: none;
+}
+
+.decoration-service-admin2{
+    display: none;
+}
+
+.error-message{
+    color: white;
+    text-decoration: underline;
 }
 
 
@@ -132,7 +146,8 @@
         width: 25vw;
         outline: none;
         margin-bottom: 15px; /* Añade margen inferior a cada input */
-        padding: 0 10px; /* Añade padding interno para separar el placeholder */
+        padding: 0 10px; 
+        color: white;/* Añade padding interno para separar el placeholder */
     }
     
     
@@ -174,6 +189,30 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .decoration-service-admin1{
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 113px;
+    }
+    
+    .decoration-service-admin2{
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 404px;
+        right: -1px;
+    }
+
+    .error-message{
+        color: white;
+        text-decoration: underline;
+        display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+    }
+    
 }
 
 

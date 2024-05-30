@@ -115,6 +115,9 @@ export function PortfolioPage() {
             </article>
           ))}
         </section>
+        <img className="decoration-portfolio1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-portfolio2" src="../../../src/assets/circle-line-service2.png"/>
+       
       </section>
     </>
   );

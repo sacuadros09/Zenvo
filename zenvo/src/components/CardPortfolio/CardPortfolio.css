@@ -104,8 +104,7 @@
         flex-direction: row;
         background-color: #353269;
         border-radius: 10px;
-        height: 60%;
-        margin-bottom: 3%;
+        height: 15vw;
     }
 
 
@@ -122,6 +121,7 @@
         overflow: hidden; /* Oculta el desbordamiento del contenido */
         text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final si el texto es demasiado largo */
         max-width: 100%; /* Ajusta el ancho máximo para que funcione correctamente con overflow */
+        margin-top: -7%;
     }
     
     .arrow-btn{
@@ -159,7 +159,16 @@
     .organice-desktop{
         display: flex;
         flex-direction: column;
-        height: 300px;
+        
+    }
+
+    .descrip-portfolio{
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 15px;
+        margin-top: -3%;
     }
 
 }

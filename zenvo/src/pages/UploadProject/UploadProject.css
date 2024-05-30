@@ -237,6 +237,14 @@
   font-size: 15px;
   font-style: normal;
   }
+
+  .decoration-upload1{
+    display: none;
+}
+
+.decoration-upload2{
+    display: none;
+}
   
 
 @media (min-width: 768px){
@@ -399,6 +407,23 @@
         gap: 8px;
         margin-top: 11%;
       }
+
+      .decoration-upload1{
+        display: block;
+        width: 10vw;
+        position: absolute;
+        top: 119px;
+    }
+    
+    .decoration-upload2{
+      display: block;
+      width: 10vw;
+      position: absolute;
+      top: 567px;
+      right: -5px;
+    }
+    
+    
     
     
 

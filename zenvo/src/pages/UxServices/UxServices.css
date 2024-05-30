@@ -53,6 +53,10 @@
     display: none;
 }
 
+.decoration-uxservice{
+    display: none;
+}
+
 @media (min-width:768px){
     .title-ux{
         font-family: "Poppins", sans-serif;
@@ -62,7 +66,7 @@
         color: #98DFFD;
         position: absolute;
         text-shadow: 1px 1px 1px #00000091;
-        left: 478px;
+        left: 603px;
     }
     .hamburguer-btn{
         background-color: rgba(0, 0, 0, 0);
@@ -129,6 +133,14 @@
         margin-bottom: 3%;
         margin-top: 3%;
         
+    }
+
+    .decoration-uxservice{
+        display: block;
+        width: 9vw;
+        position: absolute;
+        top: 310px;
+        right: 2px;
     }
 
 

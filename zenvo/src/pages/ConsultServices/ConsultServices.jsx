@@ -32,6 +32,7 @@ import CardsConsul from '../../services/dataServicesConsul'
         <img className='web-ux-img' src="../../src/assets/web-img-consulting.png"/>
         </div>
        </section>
+       <img className="decoration-consult" src="../../../src/assets/circle-line-service2.png"/>
        </section>
        
      </>

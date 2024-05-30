@@ -177,6 +177,8 @@ export function UploadPage() {
           </div>
           <AuthDetails /> {/* Usa el componente AuthDetails */}
         </section>
+        <img className="decoration-upload1" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-upload2" src="../../../src/assets/circle-line-service2.png"/>
       </section>
     </>
   );
