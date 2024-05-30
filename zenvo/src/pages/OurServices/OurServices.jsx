@@ -8,7 +8,7 @@ export function OurServices () {
         <div className="big-services">
             <div className="navbar-space"/>
     <div className="who-we-are">
-            <InfoText variant="infotext-ourservices" title = "Our services"  text = "Welcome to our services section at Zenvo Studio! This is where the magic happens. Dive into our creative world and discover how we can help you take your project to the next level. From web design to branding, we're here to offer you visual solutions that captivate, inspire and make your brand shine. Explore our services below and let us take your ideas beyond your expectations." img="/src/assets/RobotServices.png"></InfoText>
+            <InfoText variant="infotext-ourservices" title = "Our services"  text = "Welcome to our services section at Zenvo Studio! This is where the magic happens. Dive into our creative world and discover how we can help you take your project to the next level. From web design to branding, we're here to offer you visual solutions that captivate, inspire and make your brand shine. Explore our services below and let us take your ideas beyond your expectations." img="/public/RobotServices.png"></InfoText>
             </div>
             <div className="who-we-celphone">
             <InfoText variant="infotext-celphone" title = "Our services"  text = "Welcome to our services section at Zenvo Studio! This is where the magic happens. Dive into our creative world and discover how we can help you take your project to the next level."></InfoText>
@@ -28,9 +28,9 @@ export function OurServices () {
         })}
     
         </div>
-        <img className="decoration-service1-ourservice" src= "../../../src/assets/circle-line-service.png"/>
-        <img className="decoration-service2-ourservice" src="../../../src/assets/circle-line-service2.png"/>
-        <img className="decoration-service3-ourservice" src="../../../src/assets/circle-line-service.png"/>
+        <img className="decoration-service1-ourservice" src= "../../../public/circle-line-service.png"/>
+        <img className="decoration-service2-ourservice" src="../../../public/circle-line-service2.png"/>
+        <img className="decoration-service3-ourservice" src="../../../public/circle-line-service.png"/>
         </div>  
     
     

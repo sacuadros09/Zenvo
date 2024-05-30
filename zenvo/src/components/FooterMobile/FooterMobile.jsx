@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./FooterMobile.css";
 import { FaFacebook, FaTwitter, FaInstagram, FaChevronDown } from 'react-icons/fa'; // Importa el icono de la flecha hacia abajo
-import logo from '../../assets/Logo1-zenvo.png';
+import logo from '../../../public/Logo1-zenvo.png';
 import { Link } from "react-router-dom";
 
 

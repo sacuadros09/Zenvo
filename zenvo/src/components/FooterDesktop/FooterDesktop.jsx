@@ -1,7 +1,7 @@
 import "./FooterDesktop.css"; 
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import logo from '../../assets/Logo1-zenvo.png';
+import logo from '../../../public/Logo1-zenvo.png'
 
 export function FooterDesktop(props) {
     const {url} = props

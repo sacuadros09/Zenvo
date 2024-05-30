@@ -1,8 +1,8 @@
 export const dataAbout = [
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Kathe-black.png',
-        img2:"/src/assets/Kathe-color.png",
+        img: '/public/Kathe-black.png',
+        img2:"/public/Kathe-color.png",
         name: "Katherine Reyes",
         talents: "UX | UI designer",
         behance: "https://www.behance.net/katherinereyes119",
@@ -18,8 +18,8 @@ export const dataAbout = [
     },
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Impa-black.png',
-        img2:"/src/assets/Impa-color.png",
+        img: '/public/Impa-black.png',
+        img2:"/public/Impa-color.png",
         name: "Sebastián González",
         talents: "UX | UI designer ",
         behance: "https://www.behance.net/sebastigonzale106",
@@ -35,8 +35,8 @@ export const dataAbout = [
     },
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Cuadros-black.png',
-        img2:"/src/assets/Cuadros-color.png",
+        img: '/public/Cuadros-black.png',
+        img2:"/public/Cuadros-color.png",
         name: "Santiago Cuadros",
         talents: "UX | FrontEnd developer",
         behance: "https://www.behance.net/sacuma09",
@@ -52,8 +52,8 @@ export const dataAbout = [
     },
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Avila-black.png',
-        img2:"/src/assets/Avila-color.png",
+        img: '/public/Avila-black.png',
+        img2:"/public/Avila-color.png",
         name: "Juan David Avila",
         talents: "UI | FrontEnd devoloper",
         behance: "https://www.behance.net/sacuma09",

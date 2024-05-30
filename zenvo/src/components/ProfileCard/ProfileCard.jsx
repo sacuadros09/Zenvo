@@ -1,6 +1,6 @@
 import { SocialMediaButton, Button } from '../index'
-import behanceImg from '../../assets/behance.png'
-import gitHubImg from '../../assets/github.png'
+import behanceImg from '../../../public/behance.png'
+import gitHubImg from '../../../public/github.png'
 import './ProfileCard.css'
 
 export function ProfileCard(props) {

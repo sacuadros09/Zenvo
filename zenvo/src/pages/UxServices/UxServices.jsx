@@ -12,13 +12,13 @@ import CardsUx from '../../services/dataServiceUx'
       <section>
         
         <div>
-       <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../src/assets/three_line_icon.png"></img></button>
+       <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../public/three_line_icon.png"></img></button>
        <Button text='Contact us' />
        </div>
        <h1 className='title-ux'>UX Design Services</h1>
-        <img  className='banner-img' src="../../src/assets/Pic_mobile_uxservice.png"/>
+        <img  className='banner-img' src="../../public/Pic_mobile_uxservice.png"/>
         
-        <img  className='sec-banner-img' src="../../src/assets/Ux-sec-banner.png"/>
+        <img  className='sec-banner-img' src="../../public/Ux-sec-banner.png"/>
 
         <section className='sec-midpage'>
         
@@ -31,10 +31,10 @@ import CardsUx from '../../services/dataServiceUx'
         ))}
          </div>
         <div className='web-ux-img-container'>
-        <img className='web-ux-img' src="../../src/assets/ux-service-imgWeb.png"/>
+        <img className='web-ux-img' src="../../public/ux-service-imgWeb.png"/>
         </div>
        </section>
-       <img className="decoration-uxservice" src="../../../src/assets/circle-line-service2.png"/>
+       <img className="decoration-uxservice" src="../../../public/circle-line-service2.png"/>
        </section>
        
      

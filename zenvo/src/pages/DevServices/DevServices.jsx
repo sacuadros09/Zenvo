@@ -11,13 +11,13 @@ import { Button } from "../../components"
       <section>
         
         <div>
-       <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../src/assets/three_line_icon.png"></img></button>
+       <button className='hamburguer-btn'> <img className='hamburguer-img' src="../../public/three_line_icon.png"></img></button>
        <Button text='Contact us' />
        </div>
        <h1 className='title-dev'>FrontEnd Development</h1>
-        <img  className='banner-img' src="../../src/assets/banner-dev.png"/>
+        <img  className='banner-img' src="../../public/banner-dev.png"/>
         
-        <img  className='sec-banner-img' src="../../src/assets/dev-img-mobile.png"/>
+        <img  className='sec-banner-img' src="../../public/dev-img-mobile.png"/>
 
         <section className='sec-midpage'>
         
@@ -30,10 +30,10 @@ import { Button } from "../../components"
         ))}
          </div>
         <div className='web-ux-img-container'>
-        <img className='web-ux-img' src="../../src/assets/dev-img-web.png"/>
+        <img className='web-ux-img' src="../../public/dev-img-web.png"/>
         </div>
        </section>
-       <img className="decoration-devservice" src="../../../src/assets/circle-line-service2.png"/>
+       <img className="decoration-devservice" src="../../../public/circle-line-service2.png"/>
        </section>
        
      </>

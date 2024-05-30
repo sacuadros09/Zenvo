@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button, NavBar, MobileNavbar } from "../index"
-import burguerMenu from '../../assets/burguer-menu.svg'
+import burguerMenu from '../../../public/burguer-menu.svg'
 import "./Header.css"
 
 export function Header() {
@@ -16,7 +16,7 @@ return (
             <img src={burguerMenu}/>
         </button>
         <div className="list-navbar">
-            <img className="logo" src="/src/assets/Logo.png"/>
+            <img className="logo" src="/public/Logo.png"/>
             <NavBar text= "Home" url='/'/>
             <NavBar text= "About Us" url='/AboutUs'/>
             <NavBar text= "Services" url="/OurServices"/>

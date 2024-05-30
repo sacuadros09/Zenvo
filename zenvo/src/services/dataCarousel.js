@@ -1,7 +1,7 @@
 export const dataCarousel = [
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Kathe-black.png',
+        img: '/public/Kathe-black.png',
         img2:"",
         name: "Katherine Reyes",
         talents: "UX | UI designer",
@@ -18,7 +18,7 @@ export const dataCarousel = [
     export const dataCarousel1 = [ 
          {
         id: crypto.randomUUID(),
-        img: '/src/assets/Impa-black.png',
+        img: '/public/Impa-black.png',
         img2:"",
         name: "Sebastián González",
         talents: "UX | UI designer ",
@@ -36,7 +36,7 @@ export const dataCarousel = [
 
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Cuadros-black.png',
+        img: '/public/Cuadros-black.png',
         img2:"",
         name: "Santiago Cuadros",
         talents: "UX | FrontEnd developer",
@@ -53,7 +53,7 @@ export const dataCarousel = [
 export const dataCarousel3= [
     {
         id: crypto.randomUUID(),
-        img: '/src/assets/Avila-black.png',
+        img: '/public/Avila-black.png',
         img2:"",
         name: "Juan David Avila",
         talents: "UI | FrontEnd devoloper",

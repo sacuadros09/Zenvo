@@ -75,7 +75,7 @@ export function PortfolioPage() {
               from conception to digital realization. Explore our portfolio and be inspired by the art of design at Zenvo Studio.
             </p>
           </div>
-          <img className='pet-banner' src='/src/assets/robot-portfolio.png' alt="Robot Banner" />
+          <img className='pet-banner' src='/public/robot-portfolio.png' alt="Robot Banner" />
         </section>
 
         <section className='input-filter'>

@@ -33,7 +33,7 @@ import { useNavigate} from 'react-router-dom'
       <section>
         <Button3 text='Back' img='' />
         <section className='container-adminpanel'>
-            <img className='banner-admin' src='../../src/assets/Logo1-zenvo.png' alt='Banner' />
+            <img className='banner-admin' src='../../public/Logo1-zenvo.png' alt='Banner' />
             <h1 className='title-admin'>Administrador panel</h1>
             <div className='inputs-contain'>
                 <form className='admin-form' onSubmit={signIn}>
@@ -65,8 +65,8 @@ import { useNavigate} from 'react-router-dom'
                 {errorMessage && <p className='error-message'>{errorMessage}</p>}
             </div>
         </section>
-        <img className="decoration-service-admin1" src="../../../src/assets/circle-line-service.png"/>
-        <img className="decoration-service-admin2" src="../../../src/assets/circle-line-service2.png"/>
+        <img className="decoration-service-admin1" src="../../../public/circle-line-service.png"/>
+        <img className="decoration-service-admin2" src="../../../public/circle-line-service2.png"/>
       </section>
     </>
   );

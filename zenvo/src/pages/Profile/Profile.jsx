@@ -1,7 +1,7 @@
 import "./Profile.css"
 import { SocialMediaButton } from "../../components/index"
-import behanceImg from '../../assets/behance.png'
-import gitHubImg from '../../assets/github.png'
+import behanceImg from '../../../public/behance.png'
+import gitHubImg from '../../../public/github.png'
 
 export function Profile () {
 return(
@@ -36,7 +36,7 @@ return(
                 </div>
             </div>
             <div>
-                <img className="img-div" src="/src/assets/avila-color.png"/>
+                <img className="img-div" src="/public/avila-color.png"/>
             </div>
             
         </div>

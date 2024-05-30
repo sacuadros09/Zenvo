@@ -1,6 +1,6 @@
 import "./Home.css";
-import slogan from '../../assets/slogan.png';
-import allGroup from '../../assets/all-group.png';
+import slogan from '../../../public/slogan.png';
+import allGroup from '../../../public/all-group.png';
 import { InfoCard, ProfileCard, ServiceCard } from "../../components/index";
 import { dataAbout } from "../../services/dataAbout";
 import { dataServices } from "../../services/dataServices";

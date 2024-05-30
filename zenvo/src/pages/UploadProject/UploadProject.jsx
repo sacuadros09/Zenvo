@@ -63,7 +63,7 @@ export function UploadPage() {
         <Button3 text='Back' img='' />
 
         <section className='container-upload'>
-          <img className='banner-upload' src='../../src/assets/Logo1-zenvo.png' alt='Banner' />
+          <img className='banner-upload' src='../../public/Logo1-zenvo.png' alt='Banner' />
           <h1 className='title-upload'>Upload new project</h1>
           <form className='form-upload'>
             <div className='divs-inputs-upload'>

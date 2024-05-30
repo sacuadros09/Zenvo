@@ -15,9 +15,9 @@ import CardsBrand from '../../services/dataServiceBrand'
        <Button text='Contact us' />
        </div>
        <h1 className='title-ux'>Brand and marketing</h1>
-        <img  className='banner-img' src="../../src/assets/banner-brand.png"/>
+        <img  className='banner-img' src="../../public/banner-brand.png"/>
         
-        <img  className='sec-banner-img' src="../../src/assets/phone-img-brand.png"/>
+        <img  className='sec-banner-img' src="../../public/phone-img-brand.png"/>
 
         <section className='sec-midpage'>
         
@@ -30,10 +30,10 @@ import CardsBrand from '../../services/dataServiceBrand'
         ))}
          </div>
         <div className='web-ux-img-container'>
-        <img className='web-ux-img' src="../../src/assets/img-web-brand.png"/>
+        <img className='web-ux-img' src="../../public/img-web-brand.png"/>
         </div>
        </section>
-       <img className="decoration-brandservices" src="../../../src/assets/circle-line-service2.png"/>
+       <img className="decoration-brandservices" src="../../../public/circle-line-service2.png"/>
        </section>
        
      </>
