@@ -1,45 +1,47 @@
 import { useState } from 'react';
+import Swal from 'sweetalert2';
 
 export const useContactForm = (initialState) => {
   const [formData, setFormData] = useState(initialState);
-  const [message, setMessage] = useState(''); // Estado para el mensaje de éxito o error
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     // Validación básica
     if (!formData.fullName || !formData.email) {
-      setMessage('Full Name and Email are required.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Full Name and Email are required.',
+      });
       return;
     }
 
     try {
-      // Simulación de envío de datos a un servidor
-      const response = await fetch('https://example.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      if (!response.ok) {
-        throw new Error('Failed to send message');
-      }
-
-      const result = await response.json();
-      console.log(result);
+      // Guardar los datos en localStorage
+      const storedData = JSON.parse(localStorage.getItem('contactFormData')) || [];
+      storedData.push(formData);
+      localStorage.setItem('contactFormData', JSON.stringify(storedData));
 
       // Si el envío es exitoso, mostrar mensaje de éxito y limpiar el formulario
-      setMessage('Message sent successfully!');
+      Swal.fire({
+        icon: 'success',
+        title: 'Success',
+        text: 'Message sent successfully!',
+      });
       setFormData(initialState);
     } catch (error) {
       // Manejar error y mostrar mensaje de error
-      setMessage('Failed to send message. Please try again later.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Failed to send message. Please try again later.',
+      });
       console.error(error);
     }
   };
@@ -48,8 +50,5 @@ export const useContactForm = (initialState) => {
     formData,
     handleChange,
     handleSubmit,
-    message, // Devuelve el mensaje de éxito o error
   };
 };
-
-
