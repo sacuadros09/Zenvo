@@ -1,32 +1,17 @@
 .navbar-space{
-    height: 50px;
+    height: 150px;
 }
 
 .body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 0% 5%;
-}
-
-.slogan-img{
-    margin-top: 3%;
-    max-width: 70%;
-}
-
-.decoration-service1-1-ourservice{
-    display: none;
-}
-
-.decoration-service2-1-ourservice{
-    display: none;
+    gap: 80px;
 }
 
 .home-title{
-    font-size: 200%;
+    font-size: 25px;
     color: #98DFFD;
-    margin-bottom: 5%;
 }
 
 .whoweare-section{
@@ -35,7 +20,6 @@
 
 .info-cards{
     gap: 50px;
-    margin-left: 0;
 }
 
 .infocards-section{
@@ -46,10 +30,7 @@
 
 .infocards-p{
     color: white;
-    font-size: 90%;
-    margin-bottom: 5%;
 }
-
 
 .blue-card{
     display: none;
@@ -59,6 +40,8 @@
     display: flex;
     flex-direction: column;
 }
+
+
 
 .profile-cards{
     display: flex;
@@ -95,64 +78,21 @@
 }
 
 @media (min-width:768px){
-
-    .decoration-service1-1-ourservice{
-        display: block;
-        width: 8vw;
-        position: absolute;
-        top: 150px;
-        left: 0;
-    }
-    
-    .decoration-service2-1-ourservice{
-        display: block;
-        width: 10vw;
-        position: absolute;
-        top: 200px;
-        right: 0;
-    }
-
-    .home-title{
-        font-size: 400%;
-        margin-bottom: 2%;
-        margin-top: 2%;
-    }
-
-    .info-cards{
-        font-size: 230%;
-        padding: 0px 50px;
-    }
-
-    .infocards-p{
-        font-size: 250%;
-    }
-
     .slogan-img{
-        margin-top: 5%;
-        max-width: 70%;
+        max-width: 60%;
     }
 
     .blue-card{
         display: flex;
-        background-color: #5997F3;
-        width: 100%;
-        border-radius: 50px;
-
-    }
-    
-    .blue-card-text{
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        font-size: 100%;   
-        height: 250px;
-        font-size: 320%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        margin-top: 4%;
-        padding: 0px 200px;
-    }
-
-    .profile-cards{
-        width: 200%;    
+        background-color: #5997F3;
+        color: white;
+        width: 100%;
+        padding: 20px;
+        border-radius: 30px;
     }
 
     .infocards-section{
@@ -162,40 +102,55 @@
     }
 
     .img-allgroup{
-        margin-top: 10%;
-        margin-right: 5%;
-        max-width: 90%;
+        max-width: 50%;
     }
 
     .profile-cards{
-        max-width: 2300px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        max-width: 750px;
+        gap: 20px;
     }
     
     .service-cards{
-        gap: 50px;
-        font-size: 200%;
-        max-width: 2300px;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        max-width: 750px;
+        overflow-x: auto;
+    }
+
+    .ourteam-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     .ourskills-section{
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
+        gap: 30px;
     }
 
-    .ourskills-section {
-        min-width: 2300px;
+    .ourservices-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
     .skills-cards {
-        min-width: 2000px;
-        margin-left: 200px;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 100px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
     }
 
     .skills-cards img{
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 80%;
+        max-height: 80%;
     }
 }
