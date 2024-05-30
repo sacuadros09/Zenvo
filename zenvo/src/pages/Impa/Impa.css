@@ -1,0 +1,60 @@
+.body{
+    margin-bottom: 50px;
+}
+
+.profile-title{
+    font-size: 25px;
+    color: #98DFFD;
+}
+
+.all-info-profile{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.img-div{
+    background-color: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 242, 242, 0.08);
+    border-radius: 15px;
+}
+
+.profile-name{
+    color: #858BE3;
+    font-size: 25px;
+}
+
+.profile-skills{
+    color: white;
+}
+
+.info-1{
+    margin-bottom: 20px;
+}
+
+.biography{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.professional-skills{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.studies{
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+    .all-info-profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 80%;
+    }
+    .info{
+        max-width: 500px;
+    }
+}

@@ -23,7 +23,51 @@
     justify-content: center;
 }
 
+.input-contact{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #5997F3;
+    background-color: rgba(133, 139, 227, 0.50);
+    border-radius: 8px;
+    height: 34px;
+    width: 72vw;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    color: white;
+}
+
+.input-message{
+    border: 1px solid #5997F3;
+    background-color: rgba(133, 139, 227, 0.50);
+    border-radius: 8px;
+    height: 300px;
+    width: 72vw;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    color: white;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    resize: none;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contact{
+    height: 100%;    
+}
 
 @media (min-width:768px){
-    
+    .input-contact{
+        max-width: 700px;
+    }
+
+    .input-message{
+        max-width: 700px;
+    }
 }

@@ -29,8 +29,8 @@ return(
         <section className="ourteam-section">
                 <h1 className="home-title"><strong>Our Team</strong></h1>
                 <div className="profile-cards">
-                    {dataAbout.map(({id, name, talents, img2, behance, github, link}) => (
-                        <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} gitHub={github} link={link}/>
+                    {dataAbout.map(({id, name, talents, img2, behance, github, path}) => (
+                        <ProfileCard key={id} name={name} skills={talents} img={img2} behance={behance} gitHub={github} link={path}/>
                     ))}
                 </div>
         </section>

@@ -1,9 +1,9 @@
-import "./Profile.css"
+import "./Cuadros.css"
 import { SocialMediaButton } from "../../components/index"
 import behanceImg from '../../assets/behance.png'
 import gitHubImg from '../../assets/github.png'
 
-export function Profile () {
+export function Cuadros () {
 return(
     <div className="body">
         <div className="navbar-space"/>
@@ -11,18 +11,18 @@ return(
         <div className="all-info-profile">
             <div className="info">
                 <div className="info-1">
-                    <h1 className="profile-name"><strong>Juan David Avila</strong></h1>
-                    <p className="profile-skills">UI | FrontEnd devoloper </p>
+                    <h1 className="profile-name"><strong>Santiago Cuadros</strong></h1>
+                    <p className="profile-skills">UX | FrontEnd devoloper </p>
                 </div>
                 <div className="biography">
                     <p className="profile-subtitle"><strong>Biography</strong></p>
-                    <p className="profile-text">Interactive Media Design student in Cali, Colombia. Focused on interactive media. With about 1 year of experience, I specialize in user interface design (UI), leading innovative projects backed by solid research. I believe in engaging and functional solutions.</p>
+                    <p className="profile-text">As a student of interactive media design in Cali, Colombia, my main focus is on creating interactive experiences that captivate through applications and games. My passion for subjects like video games, fitness, soccer, and animation is reflected in the projects I undertake. Specializing in UX and FrontEnd development, I am committed to continuous learning and the pursuit of new ways to innovate in the world of interactive design.</p>
                 </div>
                 <div className="professional-skills">
                     <p className="profile-subtitle"><strong>Professional Skills</strong></p>
                     <ul className="profile-text">
-                        <li>Advertising and brand Design</li>
-                        <li>Interface Design and Prototyping</li>
+                        <li>UX</li>
+                        <li>Animation</li>
                         <li>Front-End Development</li>
                     </ul>
                 </div>
@@ -36,7 +36,7 @@ return(
                 </div>
             </div>
             <div>
-                <img className="img-div" src="/src/assets/avila-color.png"/>
+                <img className="img-div" src="/src/assets/cuadros-color.png"/>
             </div>
             
         </div>

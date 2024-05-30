@@ -10,6 +10,16 @@
     margin-bottom: 20px;
 }
 
+.infoabout-celphone h5{
+   font-family: 'Poppins', sans-serif;
+   font-weight:bolder;
+   font-size: 80px;
+   color: #98DFFD;
+   text-align: left;
+   margin-left: 45px;
+   margin-bottom: 20px;
+} 
+
 .infotext-ourservices p{
     font-family: 'Poppins', sans-serif;
    color: aliceblue;
@@ -17,14 +27,6 @@
    text-align: left;
    padding-right: 600px;
    margin-left: 45px;
-}
-
-.infotext-ourservices img{
-   position: absolute;
-   top: 150px;
-   right: 120px;
-   width: 363px;
-   height: 469px;
 }
 
 .infotext-celphone h5{
@@ -47,6 +49,11 @@
     margin-bottom: 40px;
  }
 
+
+ .infotext-celphone img{
+   display: none;
+}
+
  .infotext-aboutus h5{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -56,25 +63,11 @@
     
  }
 
- .infotext-aboutus p{
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-    font-size: 20px;
-   padding-right: 690px;
-   padding-left: 50px;
-   margin-bottom: 100px;
-   
+ .infoabout-cellphone{
+   display: none;
  }
 
- .infotext-aboutus img{
-   position: absolute;
-   top: 50px;
-   right: 200px;
-   width: 293px;
-   height: 359px;
-}
-
- .infoabout-cellphone h5{
+ /* .infoabout-cellphone h5{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -88,5 +81,5 @@
     font-size: 15px;
     text-align: center;
     padding: 20px;
- }
+ } */
 

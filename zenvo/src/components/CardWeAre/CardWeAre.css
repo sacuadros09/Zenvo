@@ -8,9 +8,17 @@
     flex-direction: column;
     align-items: center;
     max-width: 150px;
-    min-width: 150px;
+    min-width: 200px;
+    background-color: rgba(217, 217, 217, 0.05);
+    border: 1px solid rgba(255, 242, 242, 0.08);
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .section-img p{
     text-align:center;
+    background-color: #5997F3;
+    color: white;
+    min-width: 200px;
+    border-radius: 0 0 15px 15px;
 }

@@ -14,7 +14,7 @@ export function ProfileCard(props) {
                     <SocialMediaButton img={behanceImg} link={behance}/>
                     <SocialMediaButton img={gitHubImg} link={gitHub}/>
                 </div>
-                <Button url={link} text="See more"/>
+                <Button path={link} text="See more"/>
             </div>
             <img  className='profilecard-img' src={img}/>
         </div>

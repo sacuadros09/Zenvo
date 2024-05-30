@@ -1,36 +1,21 @@
 import "./AboutUs.css"
-import { InfoText, CardWeAre,InfoCard,CardOurServices,CardBenefits,CarouselMobile} from "../../components"
+import { InfoText, CardWeAre,InfoCard,CardOurServices,CardBenefits} from "../../components"
 import { dataAbout } from "../../services/dataAbout"
 
 export function AboutUs () {
 return(
+    <section className="body">
     <div className="about-us">
         <div className="navbar-space"/>
-        <div className="about-we-are">
-            <InfoText variant="infotext-aboutus" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions that make a lasting impact. Specializing in innovative and engaging interfaces, we focus on UX/UI and frontend expertise to merge functionality with design, ensuring every detail contributes to an exceptional user experience." img="/src/assets/RobotAbout.png"></InfoText>
-        </div> 
-        <div className="about-cellphone">
-            <InfoText variant="infoabout-cellphone" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions see more..."></InfoText>
-        </div> 
+                <InfoText variant="infotext-celphone" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions that make a lasting impact. Specializing in innovative and engaging interfaces, we focus on UX/UI and frontend expertise to merge functionality with design, ensuring every detail contributes to an exceptional user experience." img="/src/assets/RobotAbout.png"></InfoText>
+                <InfoText variant="infoabout-cellphone" title = "Who we are?"  text = "We are Zenvo Studio, a team of four passionate designers united by our commitment to delivering stunning and creative visual solutions."></InfoText>
     <div className="profile-map"> 
-    {dataAbout.map(({id,img,name}) => {
-    return(
-    <div key={id} className="profile-computer">
-    <div className="about-profile">
-        <CardWeAre  variant = "section-img"photo={img} ></CardWeAre>  
-        <CardWeAre variant = "button-name"name={name}></CardWeAre>
+        {dataAbout.map(({id,img,name}) => {
+        return(  
+            <CardWeAre key={id} variant = "section-img"photo={img} name={name}/>
+        )
+        })}
     </div>
-    </div>
-    
-    
-    )
-    })}
-    </div>
-        <div className="profile-mobile">
-            <CarouselMobile/>
-        </div>
-   
-
   <div className="about-purpose">
   <h1 className="purpose-about">What is our purpose?</h1>
     <div className="our-purpose">
@@ -55,23 +40,24 @@ return(
     <div className="benefits">
         <h1 className="title-benefits">3 benefits of working with us</h1>
         <div className="cards-benefits">
-        <div className="creative">
-        <CardBenefits variant ="about-creative" img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+            <div className="creative">
+                <CardBenefits variant ="about-creative" img="/src/assets/Pencil.png" title="Creativity without limits" description="Our passion for innovation and originality allows us to offer unique and memorable design solutions that stand out in a saturated market."></CardBenefits>
+            </div>
+            <div className="client">
+                <CardBenefits  variant ="about-client" img="/src/assets/Pencil.png" title="Client-centric approach" description="We value our clients' needs and objectives, collaborating closely with them to ensure that each project is customized and meets their expectations."></CardBenefits>
+            </div>
+            <div className="results">
+                <CardBenefits variant ="about-results" img="/src/assets/Pencil.png" title="Exceptional results" description="We are committed to delivering high-quality results on every project, using our experience and skills to exceed expectations and generate lasting impact."></CardBenefits>
+            </div>
         </div>
-        <div className="client">
-        <CardBenefits  variant ="about-client" img="/src/assets/Pencil.png" title="Client-centric approach" description="We value our clients' needs and objectives, collaborating closely with them to ensure that each project is customized and meets their expectations.
-"></CardBenefits>
-        </div>
-        <div className="results">
-        <CardBenefits variant ="about-results" img="/src/assets/Pencil.png" title="Exceptional results" description="We are committed to delivering high-quality results on every project, using our experience and skills to exceed expectations and generate lasting impact."></CardBenefits>
-        </div>
-        </div>
+        
 
 
     </div>
 
    
     </div>
+    </section>
 )
 }
   

@@ -2,7 +2,7 @@ import './Button.css'
 import { Link } from "react-router-dom";
 
 export function Button(props) {
-    const {text, url,variant,path} = props
+    const {text,variant,path} = props
 
     return (
         <div className={variant}>

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { Home, AboutUs,OurServices, Profile, AdminPanelPage,BrandServicePage,ConsultServicePage,DevServicePage,PortfolioPage,UiServicePage,UxServicePage, ContactUs} from '../pages/index';
+import { Home, AboutUs,OurServices, JD, Cuadros, Impa, Kathe, AdminPanelPage,BrandServicePage,ConsultServicePage,DevServicePage,PortfolioPage,UiServicePage,UxServicePage, ContactUs} from '../pages/index';
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 
 
@@ -9,7 +9,10 @@ export function AppRouter() {
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/AboutUs' element={<AboutUs/>} />
-        <Route path='/Profile' element={<Profile/>} />
+        <Route path='/JD' element={<JD/>} />
+        <Route path='/Cuadros' element={<Cuadros/>} />
+        <Route path='/Impa' element={<Impa/>} />
+        <Route path='/Kathe' element={<Kathe/>} />
         <Route path='/OurServices' element={<OurServices/>} />
         <Route path='/AdminPanelPage' element={<AdminPanelPage/>} />
         <Route path='/BradServicePage' element={<BrandServicePage/>} />
