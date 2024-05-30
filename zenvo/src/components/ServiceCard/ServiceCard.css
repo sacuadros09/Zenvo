@@ -20,3 +20,22 @@
 .service-card p{
     color: white;
 }
+
+@media (min-width:768px){
+
+ .service-card{
+    min-width: 800px;
+    min-height: 300px;  
+    border-radius: 20px;      
+}  
+
+ .service-card img{
+    margin: 0;
+    min-width: 800px;
+    max-height: 500px;
+}
+
+.service-card p{
+    font-size: 150%;
+}
+}

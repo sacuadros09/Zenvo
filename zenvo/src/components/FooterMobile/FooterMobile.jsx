@@ -71,7 +71,6 @@ import { Link } from "react-router-dom";
             <div className="footer-copyright">
                 <p><span>&copy;</span> Copyright 2024 - Zenvo Studio</p>
             </div>
-
         </footer>
     );
 }

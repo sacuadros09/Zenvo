@@ -3,15 +3,17 @@
 .footer-mobile {
   display: none;
 }
+
 @media only screen and (max-width: 844px) {
+
 .footer-mobile {
   display: block;
   background-color: #613DC1;
   text-align: left;
   color: white;
-  padding: 50px;
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
+  padding: 10% 15%;
+  font-family: 'Poppins', sans-serif;  
+  margin-top: 5%;
 }
 
 .footer-mobile .info-toggle-button {
@@ -20,7 +22,6 @@
   outline: none;
   cursor: pointer;
   padding: 0;
-  margin: 0;
   font-weight: bold; 
   display: flex;
   align-items: center; 
