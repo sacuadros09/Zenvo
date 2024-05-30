@@ -438,7 +438,6 @@ font-style: normal;
     color: #858BE3;
     margin-bottom: 10px; /* Espacio inferior entre el label y el input */
   }
-
   .input-proyects-upload[type="file"] {
     padding: 5px;
     color: #FF51F8;
