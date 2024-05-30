@@ -50,9 +50,6 @@ return(
                 ))}
             </div>
         </section>
-        <section className="projects-section">
-            
-        </section>
     </div>
 )
 }
