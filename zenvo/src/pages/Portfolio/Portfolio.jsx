@@ -104,7 +104,6 @@ export function PortfolioPage() {
                 <div className='all-text'>
                   <div className='arrow-title'>
                     <h3 className='title-portfolio-comp'>{card.title}</h3>
-                    <button className='arrow-btn'><img src={card.arrow}  /></button>
                   </div>
                   <p className='descrip-portfolio'>{card.description}</p>
                   <p className='made-for'>Realizado por {card.members.join(', ')}</p>

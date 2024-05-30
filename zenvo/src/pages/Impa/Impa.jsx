@@ -1,10 +1,29 @@
 import "./Impa.css"
-import { SocialMediaButton } from "../../components/index"
-import behanceImg from '../../assets/behance.png'
-import gitHubImg from '../../assets/github.png'
+import { useState, useEffect } from "react";
+import { SocialMediaButton, CardPortfolio } from "../../components/index";
+import behanceImg from '../../assets/behance.png';
+import gitHubImg from '../../assets/github.png';
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../firebase/firebase";
 
-export function Impa () {
-return(
+export function Impa() {
+    const [projectsData, setProjectsData] = useState([]);
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+               
+                const querySnapshot = await getDocs(query(collection(db, "projects"), where("members", "array-contains", "Sebastián Gonzalez")));
+                const projects = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                setProjectsData(projects);
+            } catch (error) {
+                console.error("Error fetching projects: ", error);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+    return(
     <div className="body">
         <div className="navbar-space"/>
         <h1 className="profile-title"><strong>Profile</strong></h1>
@@ -38,7 +57,11 @@ return(
             <div>
                 <img className="img-div" src="/src/assets/impa-color.png"/>
             </div>
-            
+            <div className="my-projects-section">
+                {projectsData.map(({ id, images, description, title, behance, members }) => (
+                    <CardPortfolio key={id} variant='profile-projects' img={images} text={description} title={title} link={behance} name={members.join(', ')} />
+                ))}
+            </div>
         </div>
 
     </div>

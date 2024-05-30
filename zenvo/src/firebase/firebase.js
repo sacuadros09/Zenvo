@@ -5,7 +5,7 @@ import { getStorage } from "firebase/storage";
 
 
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyDT3bw3JTwY_33tjnVAK28eclhZ76iD8Xg",
   authDomain: "zenvo-programwb.firebaseapp.com",
   projectId: "zenvo-programwb",
