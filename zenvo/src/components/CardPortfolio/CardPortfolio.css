@@ -7,7 +7,6 @@
         font-weight: 600;
         font-size: 25px;
         font-style: normal;
-        padding: 5% 5%;
         margin-bottom: 5%;
         color: #98DFFD;
         text-shadow: 1px 1px 1px #00000091;
@@ -52,7 +51,9 @@
 } 
 
 .img-card-port{
-    height:237px ;
+    height:237px;
+    border-radius:  10px 10px 0 0 ;
+    
 }
 
 .made-for{
@@ -90,8 +91,12 @@
 @media (min-width: 768px){
 
     .img-card-port{
-        height: 100%;
-        width: 100%;
+        display: block;
+        height: 15vw;
+        width: 18vw;
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     .card-portfolio{
@@ -100,22 +105,25 @@
         background-color: #353269;
         border-radius: 10px;
         height: 60%;
-        margin-bottom: 10%;
+        margin-bottom: 3%;
     }
 
 
-    .title-portfolio-comp{
+    .title-portfolio-comp {
         font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            font-size: 45px;
-            font-style: normal;
-            color: #98DFFD;
-            text-shadow: 1px 1px 1px #00000091;
-            justify-content: center;
-            display: flex;
-            padding: 5% 3%;
+        font-weight: 600;
+        font-size: 45px;
+        font-style: normal;
+        color: #98DFFD;
+        text-shadow: 1px 1px 1px #00000091;
+        justify-content: center;
+        display: flex; 
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+        overflow: hidden; /* Oculta el desbordamiento del contenido */
+        text-overflow: ellipsis; /* Añade puntos suspensivos (...) al final si el texto es demasiado largo */
+        max-width: 100%; /* Ajusta el ancho máximo para que funcione correctamente con overflow */
     }
-
+    
     .arrow-btn{
         background-color: transparent;
         border: none;

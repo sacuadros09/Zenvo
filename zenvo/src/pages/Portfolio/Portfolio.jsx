@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FiSearch } from 'react-icons/fi';
 import './Portfolio.css';
-import {FooterMobile} from "../../components/index";
 import { db } from '../../firebase/firebase';
 import { collection,getDocs } from 'firebase/firestore';
 
@@ -79,14 +77,12 @@ export function PortfolioPage() {
 
         <section className='input-filter'>
           <div>
-          <input
-      className="input-portfolio"
-      type="text"
-      placeholder="Search project"
-      onChange={handleSearch}
-      value={searchValue}
-    />
-    <FiSearch />
+          <input className="input-portfolio"
+        type="text" placeholder="Search project"
+        onChange={handleSearch}
+        value={searchValue}
+        />
+  
           </div>
           <div className="filter-container">
             <select className='filter-select' onChange={handleFilter} value={filterValue}>
@@ -108,19 +104,18 @@ export function PortfolioPage() {
                 <div className='all-text'>
                   <div className='arrow-title'>
                     <h3 className='title-portfolio-comp'>{card.title}</h3>
-                    <button className='arrow-btn'><img src={card.arrow} alt="Arrow" /></button>
+                    <button className='arrow-btn'><img src={card.arrow}  /></button>
                   </div>
                   <p className='descrip-portfolio'>{card.description}</p>
                   <p className='made-for'>Realizado por {card.members.join(', ')}</p>
                   <p className='project-types'>Tipos de proyecto: {card.project.join(', ')}</p>
-                  <a href={card.behance} className='behance-link' target='_blank' rel='noopener noreferrer'>Ver en Behance</a>
+                  <a href={card.behance} className='behance-link' target='_blank' rel='noopener noreferrer'> Behance</a>
                 </div>
               </div>
             </article>
           ))}
         </section>
       </section>
-      <FooterMobile />
     </>
   );
 }

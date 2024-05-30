@@ -5,7 +5,7 @@ export function InputUpload (props) {
     return (
       <div className='div-input-check'>
         
-        <input type='checkbox' className='input-check'  />
+        <input type='input-checkbox' className='input-check'  />
         <p className='name-checkbox'>{text}</p>
         
       </div>

@@ -84,14 +84,14 @@ export function UploadPage() {
                 name="title"
                 onChange={handleChange}
               />
-              <label>Project link</label>
+              <label className='label1'>Project link</label>
               <input className='input-proyects'
                 type='text'
                 placeholder="Url Behance"
                 name="behance"
                 onChange={handleChange}
               />
-              <label>Description</label>
+              <label className='label1'>Description</label>
               <input className='input-proyects'
                 type='text'
                 placeholder="Description of the project"
@@ -99,14 +99,12 @@ export function UploadPage() {
                 onChange={handleChange}
               />
               <div className='custom-input-file'>
-                <label>Image</label>
-                <input className='input-proyects'
-                  type="file"
-                  onChange={(event) => {
-                    setImageUpload(event.target.files[0]);
-                  }}
-                />
+              <label className="custom-file-label">Image</label>
+              <input className='input-proyects' type="file" onChange={(event) => { setImageUpload(event.target.files[0]); }} />
               </div>
+
+
+              
             </div>
           </form>
 
@@ -115,25 +113,25 @@ export function UploadPage() {
               <h4 className='subtitle-upload'>Project members</h4>
               <ul className='list-check1'>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Katherine Reyes')} />
                     Katherine Reyes
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Sebastián Gonzalez')} />
                     Sebastián Gonzalez
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Juan David Avila')} />
                     Juan David Avila
                   </label>
                 </li>
                 <li>
-                  <label>
+                  <label className='label-checkbox'>
                     <input type="checkbox" onChange={() => handleCheckboxChange('members', 'Santiago Cuadros')} />
                     Santiago Cuadros
                   </label>
@@ -143,31 +141,31 @@ export function UploadPage() {
             <h4 className='secsubtitle-upload'>Type of project</h4>
             <ul className='list-check2'>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ux design')} />
                   Ux design
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Ui design')} />
                   Ui design
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Frontend dev')} />
                   Frontend dev
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Branding & marketing')} />
                   Branding & marketing
                 </label>
               </li>
               <li>
-                <label>
+                <label className='label-checkbox'>
                   <input type="checkbox" onChange={() => handleCheckboxChange('project', 'Consulting & advisory')} />
                   Consulting & advisory
                 </label>
@@ -176,8 +174,8 @@ export function UploadPage() {
           </section>
           <div className='buttons-upload'>
             <button className='btn-upload' onClick={uploadImage}>Upload Project</button>
-            <AuthDetails /> {/* Usa el componente AuthDetails */}
           </div>
+          <AuthDetails /> {/* Usa el componente AuthDetails */}
         </section>
       </section>
     </>

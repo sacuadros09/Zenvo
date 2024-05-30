@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { auth } from "../firebase/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+import './AuthDetails.css'
 
 export const AuthDetails = () => {
     const [authuser,setAuthUser] = useState(null)
@@ -32,8 +33,10 @@ export const AuthDetails = () => {
         <div>
             {authuser ? (
                 <>
-                    <p>{`Signed In as ${authuser.email}`}</p>
-                    <button onClick={userSignOut}>Sign Out</button>
+                    <div className="container-auth">
+                    <button className="btn-logout-auth" onClick={userSignOut}>Sign Out</button>
+                    <p className="text-auth">{`Signed In as ${authuser.email}`}</p>
+                    </div>
                 </>
             ) : (
                 <p>Signed Out</p>

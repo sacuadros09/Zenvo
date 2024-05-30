@@ -66,7 +66,6 @@ import { useNavigate} from 'react-router-dom'
             </div>
         </section>
       </section>
-      <FooterMobile />
     </>
   );
 }
