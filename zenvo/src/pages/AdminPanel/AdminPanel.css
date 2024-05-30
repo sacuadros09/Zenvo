@@ -202,7 +202,7 @@
         width: 10vw;
         position: absolute;
         top: 404px;
-        right: -1px;
+        right: 1px;
     }
 
     .error-message{

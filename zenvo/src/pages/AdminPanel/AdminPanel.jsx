@@ -1,6 +1,6 @@
 import './AdminPanel.css' 
 import { auth } from '../../firebase/firebase'
-import { Button3,FooterMobile } from '../../components/index'
+import { Button3} from '../../components/index'
 import { useState } from 'react'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate} from 'react-router-dom'

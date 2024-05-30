@@ -302,6 +302,9 @@
     color: #5997F3;
     padding: 0 10px;
     font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     }
 
     .input-portfolio::placeholder {
