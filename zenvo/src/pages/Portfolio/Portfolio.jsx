@@ -120,7 +120,6 @@ export function PortfolioPage() {
           ))}
         </section>
       </section>
-      <FooterMobile />
     </>
   );
 }

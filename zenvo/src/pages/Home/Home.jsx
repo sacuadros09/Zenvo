@@ -50,7 +50,7 @@ return(
                 ))}
             </div>
         </section>
-        <section className="proyects-section">
+        <section className="projects-section">
             
         </section>
     </div>
